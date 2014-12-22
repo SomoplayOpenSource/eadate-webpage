@@ -1,0 +1,109 @@
+@charset "UTF-8";
+#header{
+	width: 1200px;
+	height: 270px;
+	margin: 0px auto;
+	}
+#logo{
+	margin-left:100px;
+	position:relative;
+	top: 25px;
+	width:200px;
+	}
+#headerbar{
+	height: 60px;
+	margin-left: 100px;
+}
+
+#headerbar ul li{
+	float:left;
+	display:inline;
+	list-style:none;
+	padding-right: 30px;
+	font-size:25px;
+}
+#headerbar ul li a{
+	color: rgb(52,210,172);
+	text-decoration: none;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 200;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+#headerblock{
+	width: 1200px;
+	height: 150px;
+	background-color: rgb(52,210,172);
+	margin:0 auto;
+}
+#bell{
+	left: 200px;
+	top: 30px;
+	position: relative;
+}
+#mail{
+	left: 220px;
+	top: 30px;
+	position: relative;
+	}
+#user{
+	left: 240px;
+	top: 35px;
+	position: relative;}
+#button1{
+	left: 240px;
+	top: 20px;
+	position: relative;}
+
+#headerfunctionbar{
+	width: 1200px;
+	height:50px;
+	background-color: rgb(242,242,242);
+	text-align:left;
+	}
+#setbutton{
+	float:right;
+	position:relative;
+	top: 5px;
+	}
+#mainframe{
+	width: 1200px;
+	height:300px;
+	margin: 0 auto;
+	}
+#footer{
+	width: 1200px;
+	height:80px;
+	margin: 0 auto;
+	background-color: rgb(52,210,172);
+	}
+#footerbar{
+	height: 30px;
+	position: relative;
+	top: 20px;
+
+	}
+#footerbar ul li{
+
+	list-style: none;
+	padding-right: 50px;
+	font-size: 12px;
+	display: inline-block;
+}
+#footerbar ul li a{
+	text-decoration: none;
+	text-align: center;
+	font-style: normal;
+	font-weight: 300;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color:#FBFCF9;
+}
+#footerwords{
+	font-size: 12px;
+	font-weight: 300;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color:#FBFCF9;
+	position:relative;
+	top:20px;
+	}
+/* CSS Document */
