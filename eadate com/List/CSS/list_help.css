@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+#PeopleSearchRightContent{
+	width:800px;
+	height:1350px;
+	margin-left: 50px;
+	float:left;
+	border-left:0px solid #000000 ;
+	border-top:0px solid #000000 ;
+	border-right:0px solid #000000 ;
+	border-bottom:0px solid #000000 ;
+	white-space: nowrap; 
+
+}
+
+#PeopleSearchRightContent ul li{
+	float: left;
+	list-style: none;
+	padding-right: 10px;
+	padding-top: 10px;
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom-style: hidden;
+
+}
+.ImageDiv{
+      position:relative;
+	  padding-right: -25px;
+      width:120px;
+      height:120px;
+      }
+.ImageDiv:hover .buttons{
+	opacity: 100;
+}
+.buttons{
+	opacity: 0;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.circular{
+	border-radius: 50% 50% 50% 50%;
+	width: 120px;
+	height: 120px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+}
+.message{
+	position: absolute;
+	top: 0;
+	width: 35px;
+	height: 35px;
+}
+.like{
+	position: absolute;
+	top: 0px;
+	width: 35px;
+	height: 35px;
+	left: 85px;
+}
+.follow{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	top: 85px;
+	left: 85px;
+}
+#wrapper #PeopleSearchMainContent #PeopleSearchRightContent ul li table tr td p {
+	color: #FF6600;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+#wrapper #PeopleSearchMainContent #PeopleSearchRightContent table tr td {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #000;
+}
+#PeopleSearchRightContent {
+	color: #FF6600;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: 75px;
+}
+.wrap{
+	white-space: normal;
+	width: 700px;
+	word-break: keep-all;
+	overflow: hidden;
+	font-size: 15px;
+	color: #000;
+	} 

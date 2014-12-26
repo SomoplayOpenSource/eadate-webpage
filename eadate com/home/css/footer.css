@@ -1,0 +1,31 @@
+
+#footer {
+	width: 1349px;
+	height: 100px;
+	background-color: rgb(52,210,172);
+}
+#footer ul{
+	width: 1050px;
+	padding-left: 150px;
+	height: 50px;
+	list-style: none;
+}
+#footer li {
+	float: left;
+	display:block; 
+	width: 150px;
+	height: 30px;
+	color: #FFFFFF;
+	display: block;
+	text-align: center;
+}
+#footer a {
+	padding-top:10px;
+	text-decoration: none;
+	color:  #FFFFFF;
+	display: block;
+}
+#footerwords {
+	text-align: center;
+	color:  #FFFFFF;
+}

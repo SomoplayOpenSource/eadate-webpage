@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <title>Sign Up</title>
+            <link rel="stylesheet" type="text/css" href="CSS/signup.css">
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <script src="js/jquery-birthday-picker.min.js"></script>
+            <script src="js/a.js"></script>
+    </head>
+    
+    <body style="text-align:center;">
+        <div id="container">
+        <div id="header" >
+            <div id="headerblock">
+                <div id="logo">
+                    <img src ="Images/logo.png" width="291" height="103" alt="Logo" title="eat" align= "left"/>
+                </div><!--logo-->
+                <a href="signup.html"><img src="Images/alert.png" alt="" width="39" height="40" id="bell"></a>
+                <a href="signup.html"><img src="Images/email.png" alt="" width="42" height="42" id="mail"></a>
+                <a href="signup.html"><img src="Images/user1.png" alt="" width="79" height="81" id="user"></a>
+                <a href="signup.html"><img src="Images/down more.png" alt="" width="25" height="15" id="button1"></a>
+                
+                <div id="tabs">
+                    <ul>
+                        <li><a href = "">HOME</a></li>
+                        <li><a href = "">PEOPLE</a></li>
+                        <li><a href = "">SCENES</a></li>
+                        <li><a href = "">ACTIVITY</a></li>
+                        <li><a href = "">DEAL</a></li>
+                    </ul>
+                </div><!--tabs-->
+            </div><!--hearderblock-->
+
+            
+            </div><!--header-->
+        
+        <br></br>
+            <p><h1>Sign Up!</h1></p>
+        <br></br>
+        <br></br>
+        <hr style="border-top: dotted 1px #C0C0C0; width:450px;"  />
+        <br></br>
+        <div  id="form">
+
+                        <label for="email">Email:</label>
+                        <input class="textbox" placeholder="Email" type="text">
+                            <br></br>
+                            <label for="username">Enter username:</label>
+                            <input class="textbox" placeholder ="Username" type="text">
+                                <br></br>
+                                <label for="password">Enter password:</label>
+                            <input class="textbox" placeholder ="Password" type="password">
+                                <br></br>
+                                <label for="repassword">Confirm password:</label>
+                                <input class="textbox" placeholder ="Confirm Password" type="password">
+                                    <br></br>
+                                    
+                                    <label>Birthday:</label>
+
+                                    <select class="select" style='width:125px;height:25px;font-size:15px;border-radius:5px;border:1px #c4c4c4 solid;background:url('images/down.png') no-repeat;' id="year" onchange="loadMonths(this);">
+    
+                                    </select>
+                                    <select class="select"style='width:100px;height:25px;font-size:15px;border-radius:5px;border:1px #c4c4c4 solid;background:url('images/down.png') no-repeat;'  id="months" onchange="loadDays(this);">
+                                        <option value="0">Month</option>
+                                        <option value="1">January</option>
+                                        <option value="2">February</option>
+                                        <option value="3">March</option>
+                                        <option value="4">April</option>
+                                        <option value="5">May</option>
+                                        <option value="6">June</option>
+                                        <option value="7">July</option>
+                                        <option value="8">August</option>
+                                        <option value="9">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                    <select class="select" style='width:50px;height:25px;font-size:15px;border-radius:5px;border:1px #c4c4c4 solid;background:url('images/down.png') no-repeat;' id="days" ></select>
+
+                                    <br></br>
+                                    <label for="gender">Gender:</label>
+                                    <select class="select" style='width:275px;height:25px;font-size:15px;border-radius:5px;border:1px #c4c4c4 solid;background:url('images/down.png') no-repeat;'  name="gender">
+                                        <option value="select">Select..</option>
+                                        <option value="m">Male</option>
+                                        <option value="f">Female</option>
+                                        
+                                    </select>
+                                    <br></br>
+                                    
+                                    <label for="referal">Referal Number:</label>
+                                    <input class="textbox" placeholder ="Referal Number" type="text">
+                                        <br></br>
+                                        <br></br>
+                                        <input class="button" style='width:275px;height:25px;font-size:15px;border:1px #c4c4c4 solid;' name="submit" id="submit" tabindex="5" value="Sign up" type="submit">
+                                            
+                                            
+        </div>
+        <div id="footer">
+            <div id="footerbar" align="center">
+                <ul>
+                    <li><a href = "">About us</a></li>
+                    <li><a href = "">News</a></li>
+                    <li><a href = "">Term of Use</a></li>
+                    <li><a href = "">Privacy Police</a></li>
+                    <li><a href = "">Help FAQs</a></li>
+                        <li><a href = "">Contact us</a></li>
+                        <li><a href = "">Site Map</a></li>
+                        </ul>
+            </div><!--footerbar-->
+            <div id="footerwords" align="center">
+                        copyright 2014, Somoplay Inc, All Rights Reserved.
+            </div>
+        </div><!--footer-->
+        </div>
+        <script type="text/javascript" src="js/birthday.js"></script>
+    </body>
+</html>

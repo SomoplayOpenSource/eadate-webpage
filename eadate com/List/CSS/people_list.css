@@ -1,0 +1,362 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+}
+#main {
+	width: 100%;
+	height: 100%;
+}
+#header{
+	width:100%;
+	height: 270px;
+	margin: 0px auto;
+	}
+#logo{
+	margin-left:100px;
+	position:relative;
+	top: 25px;
+	width:200px;
+	}
+#headerbar{
+	height: 60px;
+	margin-left: 100px;
+}
+
+#headerbar ul li{
+	float:left;
+	display:inline;
+	list-style:none;
+	padding-right: 30px;
+	font-size:25px;
+}
+#headerbar ul li a{
+	color: rgb(52,210,172);
+	text-decoration: none;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 100;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+}
+#headerblock{
+	width:100%;
+	height: 150px;
+	background-color: rgb(52,210,172);
+	margin:0;
+}
+#bell{
+	left: 100px;
+	position: relative;
+}
+#mail{
+	left: 120px;
+	position: relative;
+	}
+#user{
+	left: 140px;
+	position: relative;
+	top: 5px;
+}
+#button1{
+	left: 140px;
+	position: relative;
+}
+
+#headerfunctionbar{
+	width: 1349px;
+	height:50px;
+	background-color: rgb(242,242,242);
+	text-align:left;
+	}
+#setbutton{
+	float:right;
+	position:relative;
+	top: 5px;
+	}
+#footer{
+	width: 1349px;
+	height:80px;
+	margin-right: 0 auto;
+	background-color: rgb(52,210,172);
+	text-align:center;
+	}
+#footerbar{
+	height: 30px;
+	}
+#footerbar ul li{
+	list-style: none;
+	padding-right: 50px;
+	font-size: 12px;
+	display: inline;
+}
+#footerbar ul li a{
+	text-decoration: none;
+	text-align: center;
+	font-style: normal;
+	font-weight: 300;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	color: #FBFCF9;
+}
+#footerwords{
+	font-size: 12px;
+	font-weight: 300;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	color: #FBFCF9;
+	position: relative;
+	top: 20px;
+	}
+#EadateHomeMainContent{
+	width:1349px;
+	height:1500px;	
+	margin:0 auto;
+
+}
+#EadateHomeLeftBar{
+	width: 300px;
+	height: 1500px;
+	float: left;
+	border-radius: 5;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+#EadateHomeRightContent{
+	width:1150px;
+	height:1500px;
+	float:right;
+
+}
+
+#NewPlacesForYou{
+	width: 1150px;
+	height: 500px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align:left;
+}
+
+#NewPlacesForYou ul li{
+	float:left;
+	list-style:none;
+	padding-right:300px;
+}
+#Activities{
+	width: 1150px;
+	height: 300px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align:left;
+}
+#Activities ul li{
+	float:left;
+	list-style:none;
+	padding-right:300px
+}
+.font_color{
+	color: rgb(235,98,27);
+	font-weight: lighter;
+	}
+.button{
+	border-radius:5px;
+	border:none;
+	background-color:#E7E7E7;
+	}
+#searchbar {
+	padding-top: 40px;
+	padding-left: 100px;
+	color: #333;
+	margin: 0px;
+	float: left;
+	height: 45px;
+	width: 450px;
+}
+#searchicon {
+	background: #FFFFFF;
+	float: left;
+	width: 45px;
+	height: 45px;
+}
+#searchicon_main {
+	background: #FFFFFF;
+	float: left;
+	width: 45px;
+	height: 45px;
+	border-left: 1px;
+	padding-right: 10px;
+}
+#searchword {
+	float: left;
+	background: #FFFFFF;
+	height: 45px;
+	width: 390px;
+	padding-left: 10px;
+	border: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+#searchword_main {
+	float: left;
+	background: #FFFFFF;
+	height: 45px;
+	width: 650px;
+	padding-left: 10px;
+	border-left: 1px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+#searchgo {
+	float: left;
+	height: 45px;
+	width: 45px;
+	border: 0px;
+	background: #FF6633;
+	color: #FFFFFF;
+	display: block;
+	padding-left: 5px;
+	margin-left: 5px;
+}
+#wrapper{
+	width:1450px;
+	height:1600px;
+	margin:0 auto;
+	padding: 20px;
+}
+
+#Navigationbar{
+	width:1120px;
+	height:40px;
+	margin:60px 0px 0px 0px;
+}
+
+#Navigationbar ul li{
+	float:left;
+	list-style:none;
+	padding-right: 20px;
+	color:#FFFFFF ;
+	font-size:25px;
+}
+
+#Navigationbar ul li a{
+	display: block;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 20px 30px;
+}
+
+#Navigationbar ul li a:hover, #Navigationbar ul li.here a {
+	background-color:white;
+	color: #ae762d;
+}
+
+#PeopleSearchMainContent{
+	width: 1300px;
+	height:1350px;	
+	margin-left: 50px;
+	border-left:0px solid #000000 ;
+	border-top:0px solid #000000 ;
+	border-right:0px solid #000000 ;
+	border-bottom:0px solid #000000 ;
+}
+#PeopleSearchLeftBar{
+	width:200px;
+	height:1350px;
+	margin-left: 120px;
+	float:left;
+	border-left:0px solid #000000 ;
+	border-top:0px solid #000000 ;
+	border-right:0px solid #000000 ;
+	border-bottom:0px solid #000000 ;
+}
+
+#wrapper #PeopleSearchMainContent #PeopleSearchLeftBar h1 {
+	font-family: "Futura LT Light";
+	color: #FF5F00;
+	padding-top: 0px;
+	font-size: 32px;
+}
+
+#wrapper #PeopleSearchMainContent #PeopleSearchLeftBar h2 {
+	font-family: "Futura LT Light";
+	color: #FF5F00;
+	font-size: 18px;
+}
+
+#wrapper #PeopleSearchMainContent #PeopleSearchLeftBar form input {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+td {
+	color: #000;
+}
+td {
+	color: #FF6600;
+}
+#wrapper #PeopleSearchMainContent #PeopleSearchRightContent ul li table tr td table tr td {
+	color: #000000;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#header #headerblock table tr td .navbar-form.navbar-left .form-group .btn.btn-default {
+	color: #FFF;
+}
+#wrapper #PeopleSearchMainContent #PeopleSearchRightContent .navbar-form.navbar-left .form-group .btn.btn-default {
+	color: #FFF;
+}
+#wrapper #PeopleSearchMainContent #PeopleSearchLeftBar {
+	font-family: "Futura LT Light";
+
+}
+#wrapper #PeopleSearchMainContent #PeopleSearchLeftBar form {
+	font-family: "Futura LT Light";
+	font-size: 16px;
+}
+.select_location {
+	width: 160px;
+	height: 25px; 
+	font-family: "Futura LT Light";
+	font-size: 16px; 
+	border-radius: 5px; 
+	border: 1px #c4c4c4 solid;
+}
+.select {
+	width: 80px; 
+	height: 25px; 
+	font-size: 15px; 
+	border-radius: 5px; 
+	border: 1px #c4c4c4 solid;
+	font-family: "Futura LT Light";
+	font-size: 16px;
+}
+.leftbutton {
+	border: 0px;
+	width: 180px;
+	height: 30px;
+	text-align: left;
+	padding-right: 0;
+	margin-right: 0;
+	margin-bottom: 10px;
+	font-size: 15px;
+	background-color: #FFFFFF;
+	opacity: 0.8;
+	float: right;
+}
+.leftbutton:hover {
+	opacity: 1;
+	background-color: #FFDDBB;
+}
+.leftbutton:active{
+	opacity: 1;
+	border: 0px;
+	padding: 0px;
+}
+.dottedLine{
+	color: #999;
+	border-style: dashed;
+	width: 100%;
+}
+.upDown{
+	 vertical-align:middle;
+	 width: 35px; 
+	 height: 30px;
+}

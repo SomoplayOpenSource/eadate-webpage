@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+h1{
+    color:orange;
+    float:left;
+    font-size:24px;
+    font-family:furtura;
+    font-weight:lighter;
+}
+#container{
+    width:1500px;
+    height:auto;
+    margin:auto;
+}
+#header{
+    width: 100%;
+    height: 200px;
+    margin: 0px auto;
+}
+#logo{
+    margin-left:100px;
+    position:relative;
+    top: 25px;
+    width:250px;
+}
+#tabs{
+    padding-top:20px;
+    width:1500px;
+    height:100%;
+    margin:40px 0px 0px 0px;
+    font-family:furtura;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+#tabs ul li{
+    float:left;
+    list-style:none;
+    padding-right: 20px;
+    color:#FFFFFF ;
+    font-size:25px;
+}
+
+#tabs ul li a{
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px 30px;
+}
+
+#tabs ul li a:hover, #tabs ul li.here a {
+    background-color:white;
+    color: #F88017;
+}
+
+#headerblock{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(52,210,172);
+}
+
+
+#signin {
+    border-right:1px black dotted;
+    float: left;
+    padding-left:10%;
+    width: 40%;
+}
+
+#signup {
+    float: right;
+    width: 45%;
+}
+
+
+#blank{
+    border:3px red dotted;
+
+    float:left;
+    width:100%;
+}
+
+#bell{
+    left: 200px;
+    top: 30px;
+    position: relative;
+}
+#mail{
+    left: 220px;
+    top: 30px;
+    position: relative;
+}
+#user{
+    left: 240px;
+    top: 35px;
+    position: relative;}
+#button1{
+    left: 240px;
+    top: 20px;
+    position: relative;}
+
+#setbutton{
+    float:right;
+    position:relative;
+    top: 5px;
+}
+#footer{
+    width: 1500px;
+    height:80px;
+    margin: auto;
+    clear: both;
+    background-color: rgb(52,210,172);
+    text-align:center;
+}
+#footerbar{
+    height: 30px;
+}
+#footerbar ul li{
+    list-style: none;
+    padding-right: 50px;
+    font-size: 12px;
+    display: inline;
+}
+#footerbar ul li a{
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    color: #FBFCF9;
+}
+#footerwords{
+    font-size: 12px;
+    font-weight: 300;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    color: #FBFCF9;
+    position: relative;
+    top: 20px;
+}
+
+.font_color{
+    color: rgb(235,98,27);
+    font-weight: lighter;
+}
+
+/*.button{
+ background: rgb(52,210,172); display: inline-block; padding: 5px 10px 6px; color: white; text-decoration: none; font-weight: bold; line-height: 1; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 1px 3px #999; -webkit-box-shadow: 0 1px 3px #999; box-shadow: 0 1px 3px #999; text-shadow: 0 -1px 1px #222; border: none; position: relative; left:20%;cursor: pointer; font-size: 14px; font-family:Verdana, Geneva, sans-serif;
+ }
+ 
+ .button:hover{
+ background-color: #FFA500;
+ }
+ */
+
+
+.button{
+    border-radius:5px;
+    border:none;
+    background-color:#E7E7E7;
+    position: relative;
+    
+}
+
+.textbox {
+    align:left;
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 275px;
+    font-size: 13px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+}
+
+.textbox:focus {
+    outline: none;
+    border: 1px solid #7bc1f7;
+    box-shadow: 0px 0px 8px #7bc1f7;
+    -moz-box-shadow: 0px 0px 8px #7bc1f7;
+    -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+}
+label {
+    font-family:Verdana, Geneva, sans-serif;
+    font-weight:lighter;
+    float: left;
+    text-align: left;
+    margin-right: 3px;
+    width: 180px;
+}
+
+
+
+/* CSS Document */
