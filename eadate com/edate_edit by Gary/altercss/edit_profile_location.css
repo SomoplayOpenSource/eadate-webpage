@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+l1{
+	padding-left:400px;
+}
+l4{
+	padding-left:210px;
+}
+h1{
+	padding-left:250px;
+	font-family:furtura;
+}
+h2{
+	position:relative;
+    left:300px;
+}
+#form{
+    width:79%;
+    float:left;
+    
+}
+#wrapper{
+	height:900px;
+}
+label{
+	width:300px;
+}
+.button{
+	width: 180px;
+    height: 30px;
+	right:100px;
+}
+.select{
+	width:275px;
+	right:250px;
+}
+.textbox{
+	position:relative;
+	right:250px;
+}

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#form{
+    width:40%;
+    padding-left:25%;
+}
+hr{
+	border-top: dotted 1px #C0C0C0;
+	width:450px;
+}
+label{
+	width:200px;
+	margin-right:5px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align:right;
+}
+h1{
+	font-family:Verdana, Geneva, sans-serif;
+	padding-left:500px;
+}
+#wrapper{
+	 height:1500px;
+}
+.content{
+	position:relative;
+	left:258px;
+}

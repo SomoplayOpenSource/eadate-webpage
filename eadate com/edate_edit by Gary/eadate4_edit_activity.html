@@ -1,0 +1,141 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <title>Sign Up</title>
+            <link rel="stylesheet" type="text/css" href="cssintegrate/basic.css">
+            <link rel="stylesheet" type="text/css" href="cssintegrate/header.css">
+            <link rel="stylesheet" type="text/css" href="cssintegrate/layout.css">
+            <link rel="stylesheet" type="text/css" href="cssintegrate/footer.css">
+            <link rel="stylesheet" type="text/css" href="altercss/edit_activity.css">
+			<script type="text/javascript" src="js/birthday.js"></script>
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="header" >
+                <div id="headerblock">
+                    <div id="logo">
+                    <img src ="Images/logo.png" alt="Logo" title="eat" align= "left" id="edlogo"/>
+                    </div><!--logo-->
+                    <a href="signup.html"><img src="Images/alert.png" alt="" id="bell"></a>
+                    <a href="signup.html"><img src="Images/email.png" alt="" id="mail"></a>
+                    <a href="signup.html"><img src="Images/user1.png" alt="" id="user"></a>
+                    <a href="signup.html"><img src="Images/down more.png" alt="" id="button1"></a>
+                    
+                    <div id="tabs">
+                        <ul>
+                            <li><a href = "">HOME</a></li>
+                            <li><a href = "">PEOPLE</a></li>
+                            <li><a href = "">SCENES</a></li>
+                            <li><a href = "">ACTIVITY</a></li>
+                            <li><a href = "">DEAL</a></li>
+                        </ul>
+                    </div><!--tabs-->
+                </div><!--hearderblock-->
+                
+                
+            </div><!--header-->
+            
+            <br></br>
+            <p><h1>Detail</h1></p>
+            <br></br>
+            <br></br>
+            <hr/>
+            <br></br>
+            <div  id="form">
+                
+                <label for="title">Title:</label>
+                <input class="textbox" type="text">
+                    <br></br>
+                    <label for="acttype">Activity Type:</label>
+                <select class="select" style='width:275px;'  name="acttype">
+                        <option value="select">Select..</option>
+                        <option value="drinks">Drinks</option>
+                        <option value="dinner">Dinner</option>
+                        </select>
+                        <br></br>
+                        <label for="numofpeople">Number of People</label>
+                        <select class="select" style='width:275px;'  name="numofpeople">
+                            <option value="select">Select..</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            </select>
+                            <br></br>
+                            <label>Date:</label>
+                                
+                                <select class="select" style='width:125px;' id="year" onChange="loadMonths(this);">
+                                    
+                                </select>
+                                <select class="select" style='width:100px;'  id="months" onChange="loadDays(this);">
+                                    <option value="0">Month</option>
+                                    <option value="1">January</option>
+                                    <option value="2">February</option>
+                                    <option value="3">March</option>
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                                <select class="select" style='width:50px;' id="days" ></select>
+                                
+                                <br></br>
+                                
+                                
+                                <label for="time">Time:</label>
+                                <select class="select" style='width:125px;'  name="gender">
+                                    <option value="select">Select..</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    
+                                </select>
+                                       to
+                                <select class="select" style='width:125px;'  name="gender">
+                                    <option value="select">Select..</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    
+                                </select>
+                                <br></br>
+                                
+                                <label for="payment">Payment Method:</label>
+                                <select class="select" style='width:275px;'  name="gender">
+                                    <option value="select">Select..</option>
+                                    <option value="visa">Visa</option>
+                                    <option value="master">Mastercard</option>
+                                    
+                                </select>
+                                <br></br>
+                                
+                                <label for="actdescript">Activity Description:</label>
+                                <textarea class="content"></textarea>
+                                    <br></br>
+                                    <br></br>
+                                    <input class="button3" name="submit" id="submit" tabindex="5" value="Publish" type="submit">
+                                        <input class="button3" name="submit" id="submit" tabindex="5" value="Cancel" type="submit">
+                                        
+                                        </div>
+            <div id="footer">
+                <div id="footerbar" align="center">
+                    <ul>
+                        <li><a href = "">About us</a></li>
+                        <li><a href = "">News</a></li>
+                        <li><a href = "">Term of Use</a></li>
+                        <li><a href = "">Privacy Police</a></li>
+                        <li><a href = "">Help FAQs</a></li>
+                        <li><a href = "">Contact us</a></li>
+                        <li><a href = "">Site Map</a></li>
+                    </ul>
+                </div><!--footerbar-->
+                <div id="footerwords">
+                    copyright 2014, Somoplay Inc, All Rights Reserved.
+                </div>
+            </div><!--footer-->
+        </div>
+    </body>
+</html>

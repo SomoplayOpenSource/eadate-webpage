@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+l1{
+	padding-left:400px;
+}
+l4{
+	padding-left:210px;
+}
+h1{
+	padding-left:250px;
+}
+h2{
+	position:relative;
+    left:300px;
+}
+#form{
+    width:79%;
+    float:left;
+}
+wrapper{
+		height:900px;
+}
+label{
+	width:300px;
+}
+.button{
+	width: 180px;
+    height: 30px;
+	right:100px;
+}
+hr{
+	border-top: dotted 1px #C0C0C0; 
+	width:450px; 
+	position:relative;
+	right:150px;
+}
+

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+
+/* CSS Document */
+#header{
+    width: 1500px;
+    height: 200px;
+    margin: 0px auto;
+}
+#logo{
+    margin-left:100px;
+    position:relative;
+    top: 25px;
+    width:250px;
+}
+#edlogo{
+	width:291px;
+	height:103px;
+}
+#tabs{
+    padding-top:20px;
+    width:100%;
+    height:100%;
+    margin:40px 0px 0px 0px;
+    font-family:furtura;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+#tabs ul li{
+    float:left;
+    list-style:none;
+    padding-right: 20px;
+    color:#FFFFFF ;
+    font-size:25px;
+}
+
+#tabs ul li a{
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px 30px;
+}
+
+#tabs ul li a:hover, #tabs ul li.here a {
+    background-color:white;
+    color: #F88017;
+}
+
+#headerblock{
+    width: 1500px;
+    height: 100%;
+    background-color: rgb(52,210,172);
+}
+#bell{
+    left: 200px;
+    top: 30px;
+    position: relative;
+	width:39px;
+	height:40px;
+}
+#mail{
+    left: 220px;
+    top: 30px;
+    position: relative;
+	width:42px;
+	height:42px;
+}
+#user{
+    left: 240px;
+    top: 35px;
+    position: relative;
+	width:79px;
+	height:81px;
+	}
+
+#button1{
+    left: 240px;
+    top: 20px;
+    position: relative;
+	width:25px;
+	height:15px;
+	}
+	
+/* CSS Document */

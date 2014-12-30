@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+#form{
+    width:79%;
+    float:left;
+}
+l1{
+	padding-left:400px;
+}
+l2{
+	padding-top: 0px;
+}
+l4{
+	padding-left:300px;
+}
+h1{
+	padding-left:250px;
+}
+h2{
+	position:relative;
+	left:300px;
+}
+.button{
+    width: 180px;
+    height: 30px;
+	right:100px;
+}
+label{
+	width:300px;
+}
+
+/* CSS Document */

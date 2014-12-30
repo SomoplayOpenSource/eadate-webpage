@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1{
+	font-family:furtura;
+	padding-left:450px;
+}
+h2{
+	position:relative;
+    left:300px;
+}
+#form{
+    width:1500px;
+}	
+label{
+	width:25px; 
+	padding-left:400px;
+	color:orange;
+}
+.button{
+	width:70px;
+}
+.textbox{
+	width:600px; 
+	position:relative; 
+	right:215px;
+}

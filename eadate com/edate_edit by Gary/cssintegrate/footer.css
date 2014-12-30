@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+
+/* CSS Document */
+
+#footer{
+    width: 1500px;
+    height:80px;
+    margin: 0 auto;
+    background-color: rgb(52,210,172);
+    text-align:center;
+	clear:both;
+}
+#footerbar{
+    height: 30px;
+	text-align:center;
+}
+#footerbar ul li{
+    list-style: none;
+    padding-right: 50px;
+    font-size: 12px;
+    display: inline;
+}
+#footerbar ul li a{
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    color: #FBFCF9;
+}
+#footerwords{
+    font-size: 12px;
+    font-weight: 300;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    color: #FBFCF9;
+    position: relative;
+    top: 20px;
+}
+
+/* CSS Document */

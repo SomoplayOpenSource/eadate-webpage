@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+l1{
+    padding-left:300px;
+}
+.ratingstar{
+	width:15px;
+	height:15px;
+	float:left;
+}
+.ratingbar{
+	height:15px;
+	padding-left:30px;
+	float:left;
+	overflow:hidden;
+}
+hr{
+	border-top: dotted 1px #C0C0C0; 
+	width:900px;
+}
+.button{
+	width:70px;
+	height:25px;
+	font-size:15px;
+}
+h1{
+	padding-left:300px
+}
+.formuser{
+	float:left;
+	padding-left:300px;
+	width:80px;
+	height:100px;
+}
+label{
+	padding-left:50px
+}
+.content{
+	position:relative; 
+	right:200px;
+}
+/* CSS Document */

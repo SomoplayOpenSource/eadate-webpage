@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1{
+	font-family:Verdana;
+	 padding-left:500px;
+}
+h2{
+	font-size:16px;
+}
+#form{
+    width:40%;
+    padding-left:25%;
+}
+label{
+	text-align: right;
+	margin-right: 5px;
+	width: 200px;
+}
+.button{
+	left:100px;
+	height:25px;
+}
