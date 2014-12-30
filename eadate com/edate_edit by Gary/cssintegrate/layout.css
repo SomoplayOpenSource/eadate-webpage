@@ -147,35 +147,7 @@ l4{
         float:left;
         font-weight:higher;
 }
-.select0{
-	width:100px;
-	height:25px;
-	font-size:15px;
-	border-radius:5px;
-	border:1px #c4c4c4 solid;
-	position:relative;
-	background:url('images/down.png') no-repeat;
-}
-.select1{
-	width:275px;
-	height:25px;
-	font-size:15px;
-	border-radius:5px;
-	border:1px #c4c4c4 solid;
-	position:relative;
-	right:250px;
-	background:url('images/down.png') no-repeat;
-}
-.select2{
-	width:100px;
-	height:25px;
-	font-size:15px;
-	border-radius:5px;
-	border:1px #c4c4c4 solid;
-	position:relative;
-	right:290px;
-	background:url('images/down.png') no-repeat;
-}
+
 .select{
     height:25px;
 	font-size:15px;
