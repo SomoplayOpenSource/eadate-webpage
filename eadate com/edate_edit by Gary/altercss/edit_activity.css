@@ -26,3 +26,8 @@ h1{
 	position:relative;
 	left:258px;
 }
+.button{
+	left:100px;
+	width:175px;
+	height:25px;
+}
