@@ -23,6 +23,7 @@ h2{
 }
 label{
 	width:300px;
+	text-align:right;
 }
 .button{
 	width: 180px;
