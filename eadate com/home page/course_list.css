@@ -103,17 +103,13 @@ html { overflow-y: scroll; }
 
 #logo a{
     display:block;
-    /*(width:100px;
-    height:60px;
-    line-height:60px;
-    text-indent:-200%;
-    overflow:hidden;*/
+   
     }
 #logo a:active{background:url(../img/logo_index.png?t=10);}
     #nav{ height:60px;
-        /*width:980px;*/
+        
         margin:0 auto;
-       /* background:#2a2c2e;*/
+      
         background-color: #34d2ac;
         position:relative;
         z-index:99
