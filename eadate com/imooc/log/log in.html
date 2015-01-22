@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link type="text/css" href="css/common-less.css" rel="stylesheet" />
+<link type="text/css" href="css/poplogin-less.css" rel="stylesheet" />
+<link type="text/css" href="css/private.css" rel="stylesheet" />
+</head>
+
+<body>
+       <div id="signin" class="rl-modal in" aria-hidden="false">
+		  <div class="rl-modal-header">
+		    <h1>
+				<span class="active-title">登录</span>
+				<span data-fromto="signin:signup">注册</span>
+		    </h1>
+		    <button type="button" class="rl-close" data-dismiss="modal" hidefocus="true" aria-hidden="true"></button>
+		  </div>
+		  <div class="rl-modal-body">
+		  	<div class="clearfix">
+				<div class="l-left-wrap l">
+					<form id="signup-form" autocomplete="off">
+						<div class="rlf-group">
+							<input name="email" data-validate="email" autocomplete="off" class="ipt ipt-email" placeholder="请输入登录邮箱" type="text">
+							<p class="rlf-tip-wrap"></p>
+							<input style="display:none;">
+						</div>
+						<div class="rlf-group">
+							<input name="password" autocomplete="off" class="ipt ipt-pwd" placeholder="请输入密码" type="password">
+							<p class="rlf-tip-wrap"></p>
+						</div>
+						<div class="rlf-group rlf-appendix clearfix">
+							<label for="auto-signin" class="l" hidefocus="true"><input checked="checked" id="auto-signin" type="checkbox">自动登录</label>
+							<a href="/user/newforgot" class="rlf-forget r" target="_blank" hidefocus="true">忘记密码 </a>
+						</div>
+						<div class="rlf-group clearfix">
+							<p class="rlf-tip-wrap " id="signin-globle-error"></p>
+							<input id="signin-btn" value="登录" hidefocus="true" class="btn-red btn-full" type="button">
+						</div>
+				    </form>
+				</div>
+		  	</div>
+		  </div>
+		  <div class="rl-model-footer">
+			<div class="pop-login-sns clearfix">
+				<span class="l">联合登录</span>
+				<a href="javascript:void(0)" hidefocus="true" data-login-sns="/user/loginweibo" class="pop-sns-weibo r"><i class="icon-weibo"></i>微博</a>
+				<a href="javascript:void(0)" hidefocus="true" data-login-sns="/user/loginqq" class="pop-sns-qq r"><i class="icon-qq"></i>QQ</a>
+				<a href="javascript:void(0)" hidefocus="true" data-login-sns="/user/loginweixin" class="pop-sns-weixin r"><i class="icon-weixin"></i>微信</a>
+			</div>
+            <div class="blockspace"></div>
+		  </div>
+         </div>
+		
+</body>
+</html>

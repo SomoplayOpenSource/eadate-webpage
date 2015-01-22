@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.rl-modal {
+	background: none repeat scroll 0 0 #fff;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+	left: 50%;
+	margin: -200px 0 0 -200px;
+	position: fixed;
+	top: 50%;
+	transition: all 0.2s ease 0s;
+	width: 400px;
+	z-index: 100000;
+}
+.rl-modal, .in {
+    opacity: 1;
+}
+.rl-modal-header {
+    padding: 0 20px;
+    position: relative;
+}
+.rl-modal-header h1 {
+    border-bottom: 1px solid #d0d6d9;
+    color: #666;
+    font-size: 16px;
+    height: 49px;
+    line-height: 49px;
+}
+.rl-modal-header h1 span {
+    cursor: pointer;
+    float: left;
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    width: 80px;
+}
+.rl-modal-header .active-title, .rl-modal-header span:hover {
+    border-bottom: 1px solid #cc0000;
+    color: #cc0000;
+}
+.rl-close {
+    background: url("/static/img/nlogin.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 17px;
+    position: absolute;
+    right: 20px;
+    top: 17px;
+    transition: transform 0.2s ease 0s;
+    width: 17px;
+}
+.rl-close:hover {
+    background-position: 0 -21px;
+    transform: scale(1.1);
+}
+.rl-modal-body {
+    padding: 40px 40px 0;
+}
+.modal-backdrop {
+    background-color: #ffffff;
+}
+.modal-backdrop.fade {
+    opacity: 0;
+}
+.modal-backdrop, .modal-backdrop.fade.in {
+    opacity: 0.75;
+}
+.modal-backdrop {
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1040;
+}
+.fade {
+    opacity: 0;
+    transition: opacity 0.15s linear 0s;
+}
+.rl-model-footer {
+    padding: 30px 40px 0;
+}
+.rlf-appendix {
+    line-height: 1em;
+}
+.rlf-appendix .rlf-forget {
+    color: #0088cc;
+}
+.rlf-appendix .rlf-forget:hover {
+    color: #cc0000;
+    text-decoration: underline;
+}
+.rl-modal .ipt {
+    background-color: #fff;
+    background-image: url("/static/img/common/ipt-sprite.png");
+    background-repeat: no-repeat;
+    padding: 9px 9px 9px 48px;
+    width: 261px;
+}
+.ipt-email {
+    background-position: 0 0;
+}
+.ipt-pwd {
+    background-position: 0 -48px;
+}
+.ipt-nick {
+    background-position: 0 -96px;
+}
+.rlf-verify-group .rlf-input {
+    background: none repeat scroll 0 0 #fff;
+    padding-left: 7px;
+    vertical-align: top;
+    width: 120px;
+}
+.rlf-verify-group img {
+    display: inline-block;
+    height: 38px;
+    margin: 0 10px;
+    vertical-align: top;
+    width: 70px;
+}
+.rlf-verify-group span {
+    color: #39b94e;
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    line-height: 150%;
+    margin-top: -4px;
+    vertical-align: top;
+}
+.rlf-tip-wrap {
+    font-size: 12px;
+    height: 30px;
+}
+.rlf-g-tip {
+    height: 20px;
+}
+.rlf-tip-error {
+    color: #cc0000;
+}
+.btn-full {
+    width: 318px;
+}
+.btn-block {
+    display: block;
+    width: auto;
+}
+.forgetpwd-resultwrap {
+    display: none;
+    text-align: center;
+    width: 260px;
+}
+.pop-login-sns {
+    font-size: 14px;
+    text-align: center;
+}
+.pop-login-sns span {
+    color: #787d82;
+}
+.pop-login-sns a {
+    color: #c8cdd2;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 20px;
+    transition: color 0.2s ease 0s;
+}
+.pop-login-sns i {
+    font-size: 18px;
+    margin-right: 5px;
+    transition: color 0.2s ease 0s;
+    vertical-align: -3px;
+}
+.pop-login-sns a:hover {
+    color: #787d82;
+}
+.pop-login-sns .pop-sns-weixin:hover i {
+    color: #2fc15f;
+}
+.pop-login-sns .pop-sns-qq:hover i {
+    color: #2d9dd5;
+}
+.pop-login-sns .pop-sns-weibo:hover i {
+    color: #d52d2d;
+}
