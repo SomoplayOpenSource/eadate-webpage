@@ -1,0 +1,255 @@
+		.quick-view {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #97d2c9;
+    background-image: url("http://www.youfan.ca/skin/frontend/shopper/default/images/btn_overlay.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    background-size: auto auto;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #fff;
+    display: none;
+    font-size: 14px;
+    font-weight: 300;
+    height: 42px;
+    left: 30%;
+    line-height: 42px;
+    padding-bottom: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0;
+    position: absolute;
+    text-align: center;
+    text-transform: lowercase;
+    top: 14%;
+    white-space: nowrap;
+    z-index: 2;
+}
+		.products-grid {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-bottom-color: -moz-use-text-color;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: -moz-use-text-color;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: none;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: medium;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: -moz-use-text-color;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: none;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: medium;
+    border-top-color: -moz-use-text-color;
+    border-top-style: none;
+    border-top-width: medium;
+    margin-bottom: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    position: relative;
+}
+			
+			
+*::-moz-selection {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #666;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    color: #fff;
+    text-shadow: none;
+}
+.products-grid .hover {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #fff;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border-bottom-color: #fff;
+   /* border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;*/
+    border-bottom-style: solid;
+    border-bottom-width: 9px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: #fff;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: solid;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: 9px;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: #fff;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: solid;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: 9px;
+    border-top-color: #fff;
+    /* border-top-left-radius: 3px;
+    border-top-right-radius: 3px;*/
+    border-top-style: solid;
+    border-top-width: 9px;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.09);
+    left: -9px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 30px;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    position: absolute;
+    top: -9px;
+    width: 252px;
+    z-index: 2;
+}
+
+
+
+.products-grid .hover .button-container {
+    border-top-color: #f3f3f3;
+    border-top-style: solid;
+    border-top-width: 1px;
+    float: none;
+    margin-top: 45px;
+    padding-top: 13px;
+    text-align: center;
+}
+.products-grid .button-container {
+    float: right;
+    margin-left: 5px;
+}
+
+
+.ajax_loading {
+    display: none;
+    margin-top: 21px;
+    position: absolute;
+}
+* {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.products-grid .add-to-links {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #fcfcfc;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    box-shadow: 0 5px 6px -4px rgba(0, 0, 0, 0.15) inset;
+    height: 40px;
+    margin-bottom: -9px;
+    margin-left: -9px;
+    margin-right: -9px;
+    margin-top: 9px;
+    text-align: center;
+    width: 270px;
+}
+ul, ol {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+ul, ol {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+.products-grid .add-to-links li {
+    display: inline;
+    line-height: 40px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 5px;
+    margin-top: 0;
+}
+		
+.hover1{
+	display: none ;
+	height: 28px !important;
+	margin-left: 9px !important;
+	margin-top: 28px !important;
+	width: 260px !important;
+	z-index: 1 !important;
+	overflow: visible !important;
+	
+}
+.sub_div_hover
+{
+float: left;
+ height: 35px; 
+ margin-left: 45px;
+ margin-top: 2px;	
+}
+.img_hover
+{
+	height: 22px !important;
+	width: 22px !important;
+	margin-left: 25px !important;
+	margin-top: 2px !important;
+	float:left !important;
+}
+
+.img_3rd_part
+{
+	margin-left: -24px;
+	margin-top: 27px;
+	width: 217px !important;
+}
