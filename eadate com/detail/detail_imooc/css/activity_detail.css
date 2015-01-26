@@ -1,0 +1,78 @@
+
+
+.course_nav{
+	height:200px;
+	overflow:visible;
+}
+
+.place_info{
+	width:75%;
+	
+	float:right;
+
+}
+.place_info .left{
+	width: 40%;
+	
+	float:left;
+	
+}
+.place_info .right{
+	width:55%;
+	float:right;
+	position: relative;
+
+}
+.right span{
+	font-size:30px;
+	bottom:0;
+	left:0;
+	position: absolute;
+	color:rgb(235, 98, 27);
+	
+}
+.right #user_img{
+	
+	float:right;
+	margin-right:40px;
+	width: 250px;
+	height: 200px;
+	border-radius: 50%;
+	-webkit-border-radius:  50%;
+	-moz-border-radius:  50%;
+	color:rgb(235, 98, 27);
+	border:solid;
+}
+
+
+#place_img{
+	width:280px;
+	height:195px;
+	color:rgb(235, 98, 27);
+	border:solid;
+	float:left;
+}
+
+
+#place_name span{
+	font-size:30px;
+	
+	margin-top:15px;
+    color:#656e73;
+}
+
+#place_review{
+	width:40%;
+	color:gray;
+	
+	
+}
+
+#place_review .place_review_star{
+	display:inline-block;
+	width:15px;
+}
+
+.place_info table{
+	font-size:0.7em;
+}

@@ -1,0 +1,128 @@
+
+
+.place_info{
+	width:75%;
+	float:right;
+}
+
+#place_img{
+	width:280px;
+	height:195px;
+	color:rgb(235, 98, 27);
+	border:solid;
+	float:left;
+}
+
+#place_name span{
+	font-size:30px;
+	width:30%;
+	margin-top:5px;
+	float:left;
+	color:#656e73;
+}
+
+
+#place_review{
+	float:right;
+	margin-top:15px;
+	width:40%;
+	text-align:right;
+	color:#656e73;
+	margin-right:20px;
+}
+
+#place_review .place_review_star{
+	width:15px;
+}
+
+#contact table td{
+	text-align:left;
+	
+}
+#open_hour table td{
+	font-size:11px;
+}
+
+#open_hour table .wednesday_hour{
+	color:rgb(235, 98, 27);
+}
+
+
+
+
+.people_item{
+	margin-top:15px;
+	margin-bottom:15px;
+	width:20%;
+	height:150px;
+	color:rgb(235, 98, 27);
+	position:relative;
+	text-align:center;
+	overflow:hidden;
+	float:left;
+	
+	
+}
+
+.people_item .name{
+	font-size: 18px;
+	display:inline-block;
+	position:relative;
+	z-index:3;
+	top:125px;
+	
+	
+}
+.people_user_pic{
+	width:70%;
+	position:absolute;
+	z-index: 1;
+	left:15%;
+	display:block;
+}
+
+.people_message_pic{
+	display:block;
+	width:20%;
+	position:absolute;
+	left:10%;
+	z-index: 2;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+.people_like_pic{
+	display:block;
+	width:20%;
+	position:absolute;
+	right:10%;
+	z-index: 2;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.people_item:hover .people_message_pic{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+.people_item:hover .people_like_pic{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
