@@ -1,4 +1,3 @@
-
 .course-study{
 	overflow: hidden;
 }
@@ -189,8 +188,6 @@
 #review .review_item .review_rating_detail{
 	width:85%;
 	padding-left:2%;
-	overflow:scroll;
-	
 }
 
 
