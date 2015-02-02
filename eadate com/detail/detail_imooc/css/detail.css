@@ -156,14 +156,17 @@
 #review .review_item{
 	margin-top: 10px;
 	border-bottom: 1px dotted #999;
-	
 	display:inline-block;
 	
 }
 #review .review_item .review_item_user{
 	width: 10%;
-	overflow:hidden;	
-	float:left;	
+	overflow:hidden;
+	
+	float:left;
+	
+	
+	
 }
 
 
@@ -184,7 +187,7 @@
 #review .review_item .review_rating_detail{
 	width:85%;
 	padding-left:2%;
-	display: inline-block;
+	display:inline-block;
 }
 
 
