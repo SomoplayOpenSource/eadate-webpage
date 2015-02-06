@@ -18,19 +18,18 @@ EaDate
 
 		<script type="text/javascript" language="JavaScript">
 		
-		jQuery.noConflict();
+jQuery.noConflict();
 jQuery( document ).ready(function( $ ) {
   // Code that uses jQuery's $ can follow here.
   
 $('.course-category').hover(
 function () {
    // $(this).addClass('hover');
-   //alert($(this).index());
-    $(".dot-sidebar-curr").css('top',$(this).index()*60+'px');
+   // alert($(this).css('height'));
+    //$(".dot-sidebar-curr").css('Top','60px');
     
 }, function () {
     $(this).removeClass('hover');
-   // $(".dot-sidebar-curr").css('top','0px');
 });
 
 
@@ -44,7 +43,6 @@ $('.all_set').click(
 $('.course-category-sort a ').click(
 function () 
 {
-	$(".dot-sidebar-curr").css('top',$(this).closest('.course-category').index()*60+'px');
 	$(this).closest('.course-category').find('a').removeClass("active");
     $(this).addClass('active');
     
@@ -123,8 +121,8 @@ $('.course-filter_disp_m a').click(
 
 
 
-<link rel="stylesheet" href="css/course_list.css" type="text/css" />
-<link rel="stylesheet" href="css/body_li.css" type="text/css" />
+<link rel="stylesheet" href="CSS/course_list.css" type="text/css" />
+<link rel="stylesheet" href="CSS/body_li.css" type="text/css" />
 
 </head> 
 <body  id="List_courseId">	
@@ -203,55 +201,89 @@ $('.course-filter_disp_m a').click(
                  
           <li class="course-category curr " style="height:auto;" >
                     	
-    <a  class="course-category-link"  data-id="1" >Type<span > </span></a>
+    <a  class="course-category-link"  data-id="1" >Profile Type<span > </span></a>
     
       <div class="course-category-sort" id="div_pt" style="display: none;">
          <div class="course-category-sort-bg"></div>
             <ul>
             	
             	
-          <li><a id="a_dating" data-id="7"  style="cursor: pointer;">Lunch</a></li>
+          <li><a id="a_dating" data-id="7"  style="cursor: pointer;">Dating</a></li>
                                                             
-          <li> <a  id="a_foodie"  data-id="44" style="cursor: pointer;">Dinner</a></li>
-           
-           <li> <a  id="a_foodie"  data-id="44" style="cursor: pointer;">Movie</a></li>                                                  
+                                                            <li>
+                                                                                                                  
+                                                           
+           <a  id="a_foodie"  data-id="44" style="cursor: pointer;">Foodie</a></li>
                                                             
-		<li><a  id="a_all"  data-id="44" style="cursor: pointer;">All</a></li>
+                                                            
+                                                             <li>                                                             	                                                             	
+      <a  id="a_all"  data-id="44" style="cursor: pointer;">All</a></li>
                                                           </ul>
                         </div>    
                     	
                     </li>
                     
                      
+                          <li class="course-category curr " style="height:auto;" 	>
+                    	
+                    	<a  class="course-category-link" data-id="1" >Gender<span id="span_gen"> </span></a>
+                    		
+                        
+                  
+                      <div class="course-category-sort" id="div_gender" style="display: none;">
+                            <div class="course-category-sort-bg"></div>
+                            <ul>
+                                                            <li>
+                                                            	
+                                                            	
+                                                            	<a id="a_male" data-id="7"  style="cursor: pointer;">Male</a></li>
+                                                            <li>
+                                                           
+                                                            	
+                                                            	<a id="a_female"  data-id="44" style="cursor: pointer;">Female</a></li>
+                                                             <li>
+                          
+                                                             	
+                                                             	
+                                                             	<a id="a_all_gen"  data-id="44" style="cursor: pointer;">All</a></li>
+                                                          </ul>
+                        </div>    
+                    	
+                    </li>
                              
-                       
+                             
+                             
+                       <li class="course-category curr " style="height:auto;">
+                    	
+                    	
+                     
                                  
  <li class="course-category curr " style="height:auto;" 	>
                     	
-                    	<a  class="course-category-link" data-id="1" >Minimum Price<span id="span_minage"> </span></a>
+                    	<a  class="course-category-link" data-id="1" >Minimum Age<span id="span_minage"> </span></a>
                     		
                                   <div class="course-category-sort" id="div_min_age" style="display: none;">
                             <div class="course-category-sort-bg"></div>
                             <ul>
                                                             <li>
                                                             	
-                                                            	<a id="a_min18" data-id="7"  style="cursor: pointer;">100</a></li>
+                                                            	<a id="a_min18" data-id="7"  style="cursor: pointer;">18</a></li>
                                                              <li>
                                                              
-                                                             	<a id="a_min19" data-id="7"  style="cursor: pointer;">200</a></li>
+                                                             	<a id="a_min19" data-id="7"  style="cursor: pointer;">19</a></li>
                                                               <li>
                                                               	
-                                                              	<a id="a_min20" data-id="7"  style="cursor: pointer;">300</a></li>
+                                                              	<a id="a_min20" data-id="7"  style="cursor: pointer;">20</a></li>
                                                                <li>
                                                                
-                                                               	<a id="a_min21" data-id="7"  style="cursor: pointer;">400</a></li>
+                                                               	<a id="a_min21" data-id="7"  style="cursor: pointer;">21</a></li>
                                                                 <li>
                                                                 	
                                                                 	
-                                                                	<a id="a_min22" data-id="7"  style="cursor: pointer;">500</a></li>
+                                                                	<a id="a_min22" data-id="7"  style="cursor: pointer;">22</a></li>
                                                                  <li>
                                                                  	
-                                                                 	<a id="a_min23" data-id="7" style="cursor: pointer;">600</a></li>
+                                                                 	<a id="a_min23" data-id="7" style="cursor: pointer;">23</a></li>
                                                                  
                                                                  
                                                                   <li>
@@ -267,30 +299,30 @@ $('.course-filter_disp_m a').click(
       
        <li class="course-category curr " style="height:auto;" >
                     	
-                    	<a  class="course-category-link" data-id="1" >Maximum Price<span id="span_maxage"> </span></a>
+                    	<a  class="course-category-link" data-id="1" >Maximum Age<span id="span_maxage"> </span></a>
                     		
                                   <div class="course-category-sort" id="div_max_age" style="display: none;">
                             <div class="course-category-sort-bg"></div>
                             <ul>
                                                             <li>
                                                             	
-                                                            	<a id="a_max18" data-id="7"  style="cursor: pointer;">100</a></li>
+                                                            	<a id="a_max18" data-id="7"  style="cursor: pointer;">18</a></li>
                                                              <li>
                                                              	
-                                                             	<a id="a_max19" data-id="7"  style="cursor: pointer;">200</a></li>
+                                                             	<a id="a_max19" data-id="7"  style="cursor: pointer;">19</a></li>
                                                               <li>
                                                               	
                                                               		
-                                                              	<a id="a_max20" data-id="7"  style="cursor: pointer;">300</a></li>
+                                                              	<a id="a_max20" data-id="7"  style="cursor: pointer;">20</a></li>
                                                                <li>
                                                                
-                                                               	<a id="a_max21" data-id="7"  style="cursor: pointer;">400</a></li>
+                                                               	<a id="a_max21" data-id="7"  style="cursor: pointer;">21</a></li>
                                                                 <li>
                                                                 	
-                                                                	<a id="a_max22" data-id="7"  style="cursor: pointer;">500</a></li>
+                                                                	<a id="a_max22" data-id="7"  style="cursor: pointer;">22</a></li>
                                                                  <li>
                                                                  	
-                                                                 	<a id="a_max23" data-id="7"  style="cursor: pointer;">600</a></li>
+                                                                 	<a id="a_max23" data-id="7"  style="cursor: pointer;">23</a></li>
                                                                  
                                                                  <li>
                                                                  	
@@ -336,97 +368,7 @@ $('.course-filter_disp_m a').click(
                     	
                     </li>
       
-      
-      
-      <li class="course-category curr " style="height:auto;" 	>
-                    	
-                    	<a  class="course-category-link" data-id="1" >Liked<span id="span_loc"> </span></a>
-                    		
-                                  <div class="course-category-sort" id="div_loc" style="display: none;">
-                            <div class="course-category-sort-bg"></div>
-                            <ul>
-                                                            <li>
-                                                            	
-                                                            	
-                                                            	<a id="a_loc1" data-id="7"  style="cursor: pointer;">1</a></li>
-                                                             <li>
-                                                             	
-                                                             	<a id="a_loc2" data-id="7"  style="cursor: pointer;">2</a></li>
-                                                              <li>
-                                                              	
-                                                              	<a id="a_loc3" data-id="7"  style="cursor: pointer;">3</a></li>
-                                                               <li>
-                                                               
-                                                               	<a id="a_loc4" data-id="7"  style="cursor: pointer;">4</a></li>
-                                                                <li>
-                                                                	
-                                                                	<a id="a_loc5" data-id="7"  style="cursor: pointer;">5</a></li>
-                                                                
-                                                                <li>
-                                                                	
-                                                                	<a id="a_loc6" data-id="7"  style="cursor: pointer;">All</a></li>
-                                                                 
-                                                          </ul>
-                        </div>    
-                    	
-                    </li>
                                        
-                                       
-                                       
-       <li class="course-category curr " style="height:auto;" 	>
-                    	
-                    	<a  class="course-category-link" data-id="1" >Inviter<span id="span_loc"> </span></a>
-
-					
-                                  <div class="course-category-sort" id="div_loc" style="display: none;">
-                            <div class="course-category-sort-bg"></div>
-                            <ul>
-                                                            <li>
-                                                            	
-                                                            	
-                                                            	<a id="a_loc1" data-id="7"  style="cursor: pointer;">abc</a></li>
-                                                             <li>
-                                                             	
-                                                             	<a id="a_loc2" data-id="7"  style="cursor: pointer;">pqr</a></li>
-                                                           
-                                                                <li>
-                                                                	
-                                                                	<a id="a_loc6" data-id="7"  style="cursor: pointer;">All</a></li>
-                                                                 
-                                                          </ul>
-                        </div>    
-                    	
-                    </li>
-           
-         <li class="course-category curr " style="height:auto;" 	>
-                    	
-                    	<a  class="course-category-link" data-id="1" >Payment<span id="span_loc"> </span></a>
-
-					
-                                  <div class="course-category-sort" id="div_loc" style="display: none;">
-                            <div class="course-category-sort-bg"></div>
-                            <ul>
-                                                            <li>
-                                                            	
-                                                            	
-                                                            	<a id="a_loc1" data-id="7"  style="cursor: pointer;">My Treat</a></li>
-                                                             <li>
-                                                             	
-                                                             	<a id="a_loc2" data-id="7"  style="cursor: pointer;">Your Treat</a></li>
-  
-  <li>
-                                                             	
-                                                             	<a id="a_loc2" data-id="7"  style="cursor: pointer;">All</a></li>                                                            <li>
-                                                              	
-                                                              	
-                                                                 
-                                                          </ul>
-                        </div>    
-                    	
-                    </li>
-           
-        
-        
                       </ul>
                 <div class="dot-sidebar-curr" style="top:0px"></div>
             </div>
@@ -495,8 +437,6 @@ $('.course-filter_disp_m a').click(
                 	<ul class="products-grid two_columns_3">
                
 
-
-
 <li class="item calc-price-box">
                 		
                 			<a href="">
@@ -519,7 +459,7 @@ $('.course-filter_disp_m a').click(
                 					 <span class="r"><font><font> </font></font></span>
                 					</div></a>
                 					
-                					<div class="hover hover1 course-list-img" >
+                					<div class="hover hover1 course-list-img">
                 						<div class="sub_div_hover" >
                 						<a href="" >
                 							<img class="img_hover" src="Images/message.png" style=""></a>
@@ -527,14 +467,11 @@ $('.course-filter_disp_m a').click(
                 						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
                 				
                 						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
-                						
-                						<a href="" style="float: left;">
-                							<img class="img_3rd_part" src="Images/images/FD1.jpg" >	</a>
                 						</div>
-                									
+															
 	</div>
 </li>
-
+	
 <li class="item calc-price-box">
                 		
                 			<a href="">
@@ -557,7 +494,7 @@ $('.course-filter_disp_m a').click(
                 					 <span class="r"><font><font> </font></font></span>
                 					</div></a>
                 					
-                					<div class="hover hover1 course-list-img" >
+                					<div class="hover hover1 course-list-img">
                 						<div class="sub_div_hover" >
                 						<a href="" >
                 							<img class="img_hover" src="Images/message.png" style=""></a>
@@ -565,15 +502,12 @@ $('.course-filter_disp_m a').click(
                 						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
                 				
                 						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
-                						
-                						<a href="" style="float: left;">
-                							<img class="img_3rd_part" src="Images/images/FD2.jpg" >	</a>
                 						</div>
-                									
+															
 	</div>
 </li>
-
-<li class="item calc-price-box">
+	
+	<li class="item calc-price-box">
                 		
                 			<a href="">
                 			<div class="course-list-img">
@@ -595,7 +529,7 @@ $('.course-filter_disp_m a').click(
                 					 <span class="r"><font><font> </font></font></span>
                 					</div></a>
                 					
-                					<div class="hover hover1 course-list-img" >
+                					<div class="hover hover1 course-list-img">
                 						<div class="sub_div_hover" >
                 						<a href="" >
                 							<img class="img_hover" src="Images/message.png" style=""></a>
@@ -603,15 +537,12 @@ $('.course-filter_disp_m a').click(
                 						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
                 				
                 						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
-                						
-                						<a href="" style="float: left;">
-                							<img class="img_3rd_part" src="Images/images/FD3.jpg" >	</a>
                 						</div>
-                									
+															
 	</div>
 </li>
-
-<li class="item calc-price-box">
+	
+	<li class="item calc-price-box">
                 		
                 			<a href="">
                 			<div class="course-list-img">
@@ -633,7 +564,7 @@ $('.course-filter_disp_m a').click(
                 					 <span class="r"><font><font> </font></font></span>
                 					</div></a>
                 					
-                					<div class="hover hover1 course-list-img" >
+                					<div class="hover hover1 course-list-img">
                 						<div class="sub_div_hover" >
                 						<a href="" >
                 							<img class="img_hover" src="Images/message.png" style=""></a>
@@ -641,52 +572,11 @@ $('.course-filter_disp_m a').click(
                 						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
                 				
                 						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
-                						
-                						<a href="" style="float: left;">
-                							<img class="img_3rd_part" src="Images/images/FD1.jpg" >	</a>
                 						</div>
-                									
+															
 	</div>
 </li>
-
-<li class="item calc-price-box">
-                		
-                			<a href="">
-                			<div class="course-list-img">
-                		<img alt="Image" src="Images/images/NV5.jpg">
-                		</div>
-                		<h5><span><font><font>Cindy, 19 toronto</font></font></span></h5><div class="intro">
-                			<p><font><font>Cindy, 19 toronto </font></font></p>
-                			
-                			<span class="l">
-                			<font>
-                				<font>  	</font></font>
-                				</span> 
-                				<span class="r"><font><font> </font></font></span></div>
-                				
-                				<div class="tips">
-                					<span class="l">
-                					<font><font> </font></font>
-                					</span> 
-                					 <span class="r"><font><font> </font></font></span>
-                					</div></a>
-                					
-                					<div class="hover hover1 course-list-img" >
-                						<div class="sub_div_hover" >
-                						<a href="" >
-                							<img class="img_hover" src="Images/message.png" style=""></a>
-                				
-                						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
-                				
-                						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
-                						
-                						<a href="" style="float: left;">
-                							<img class="img_3rd_part" src="Images/images/FD1.jpg" >	</a>
-                						</div>
-                									
-	</div>
-</li>
-
+	
 <li class="item calc-price-box">
                 		
                 			<a href="">
@@ -709,7 +599,7 @@ $('.course-filter_disp_m a').click(
                 					 <span class="r"><font><font> </font></font></span>
                 					</div></a>
                 					
-                					<div class="hover hover1 course-list-img" >
+                					<div class="hover hover1 course-list-img">
                 						<div class="sub_div_hover" >
                 						<a href="" >
                 							<img class="img_hover" src="Images/message.png" style=""></a>
@@ -717,17 +607,258 @@ $('.course-filter_disp_m a').click(
                 						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
                 				
                 						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
-                						
-                						<a href="" style="float: left;">
-                							<img class="img_3rd_part" src="Images/images/FD1.jpg" >	</a>
                 						</div>
-                									
+															
 	</div>
 </li>
-
-
-
 	
+<li class="item calc-price-box">
+                		
+                			<a href="">
+                			<div class="course-list-img">
+                		<img alt="Image" src="Images/images/NV2.jpg">
+                		</div>
+                		<h5><span><font><font>Cindy, 19 toronto</font></font></span></h5><div class="intro">
+                			<p><font><font>Cindy, 19 toronto </font></font></p>
+                			
+                			<span class="l">
+                			<font>
+                				<font>  	</font></font>
+                				</span> 
+                				<span class="r"><font><font> </font></font></span></div>
+                				
+                				<div class="tips">
+                					<span class="l">
+                					<font><font> </font></font>
+                					</span> 
+                					 <span class="r"><font><font> </font></font></span>
+                					</div></a>
+                					
+                					<div class="hover hover1 course-list-img">
+                						<div class="sub_div_hover" >
+                						<a href="" >
+                							<img class="img_hover" src="Images/message.png" style=""></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
+                						</div>
+															
+	</div>
+</li>
+	
+	<li class="item calc-price-box">
+                		
+                			<a href="">
+                			<div class="course-list-img">
+                		<img alt="Image" src="Images/images/NV3.jpg">
+                		</div>
+                		<h5><span><font><font>Cindy, 19 toronto</font></font></span></h5><div class="intro">
+                			<p><font><font>Cindy, 19 toronto </font></font></p>
+                			
+                			<span class="l">
+                			<font>
+                				<font>  	</font></font>
+                				</span> 
+                				<span class="r"><font><font> </font></font></span></div>
+                				
+                				<div class="tips">
+                					<span class="l">
+                					<font><font> </font></font>
+                					</span> 
+                					 <span class="r"><font><font> </font></font></span>
+                					</div></a>
+                					
+                					<div class="hover hover1 course-list-img">
+                						<div class="sub_div_hover" >
+                						<a href="" >
+                							<img class="img_hover" src="Images/message.png" style=""></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
+                						</div>
+															
+	</div>
+</li>
+	
+	<li class="item calc-price-box">
+                		
+                			<a href="">
+                			<div class="course-list-img">
+                		<img alt="Image" src="Images/images/NV4.jpeg">
+                		</div>
+                		<h5><span><font><font>Cindy, 19 toronto</font></font></span></h5><div class="intro">
+                			<p><font><font>Cindy, 19 toronto </font></font></p>
+                			
+                			<span class="l">
+                			<font>
+                				<font>  	</font></font>
+                				</span> 
+                				<span class="r"><font><font> </font></font></span></div>
+                				
+                				<div class="tips">
+                					<span class="l">
+                					<font><font> </font></font>
+                					</span> 
+                					 <span class="r"><font><font> </font></font></span>
+                					</div></a>
+                					
+                					<div class="hover hover1 course-list-img">
+                						<div class="sub_div_hover" >
+                						<a href="" >
+                							<img class="img_hover" src="Images/message.png" style=""></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
+                						</div>
+															
+	</div>
+</li>
+	
+	
+	<li class="item calc-price-box">
+                		
+                			<a href="">
+                			<div class="course-list-img">
+                		<img alt="Image" src="Images/images/NV 1.jpeg">
+                		</div>
+                		<h5><span><font><font>Cindy, 19 toronto</font></font></span></h5><div class="intro">
+                			<p><font><font>Cindy, 19 toronto </font></font></p>
+                			
+                			<span class="l">
+                			<font>
+                				<font>  	</font></font>
+                				</span> 
+                				<span class="r"><font><font> </font></font></span></div>
+                				
+                				<div class="tips">
+                					<span class="l">
+                					<font><font> </font></font>
+                					</span> 
+                					 <span class="r"><font><font> </font></font></span>
+                					</div></a>
+                					
+                					<div class="hover hover1 course-list-img">
+                						<div class="sub_div_hover" >
+                						<a href="" >
+                							<img class="img_hover" src="Images/message.png" style=""></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
+                						</div>
+															
+	</div>
+</li>
+	
+<li class="item calc-price-box">
+                		
+                			<a href="">
+                			<div class="course-list-img">
+                		<img alt="Image" src="Images/images/NV2.jpg">
+                		</div>
+                		<h5><span><font><font>Cindy, 19 toronto</font></font></span></h5><div class="intro">
+                			<p><font><font>Cindy, 19 toronto </font></font></p>
+                			
+                			<span class="l">
+                			<font>
+                				<font>  	</font></font>
+                				</span> 
+                				<span class="r"><font><font> </font></font></span></div>
+                				
+                				<div class="tips">
+                					<span class="l">
+                					<font><font> </font></font>
+                					</span> 
+                					 <span class="r"><font><font> </font></font></span>
+                					</div></a>
+                					
+                					<div class="hover hover1 course-list-img">
+                						<div class="sub_div_hover" >
+                						<a href="" >
+                							<img class="img_hover" src="Images/message.png" style=""></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
+                						</div>
+															
+	</div>
+</li>
+	
+	<li class="item calc-price-box">
+                		
+                			<a href="">
+                			<div class="course-list-img">
+                		<img alt="Image" src="Images/images/NV3.jpg">
+                		</div>
+                		<h5><span><font><font>Cindy, 19 toronto</font></font></span></h5><div class="intro">
+                			<p><font><font>Cindy, 19 toronto </font></font></p>
+                			
+                			<span class="l">
+                			<font>
+                				<font>  	</font></font>
+                				</span> 
+                				<span class="r"><font><font> </font></font></span></div>
+                				
+                				<div class="tips">
+                					<span class="l">
+                					<font><font> </font></font>
+                					</span> 
+                					 <span class="r"><font><font> </font></font></span>
+                					</div></a>
+                					
+                					<div class="hover hover1 course-list-img">
+                						<div class="sub_div_hover" >
+                						<a href="" >
+                							<img class="img_hover" src="Images/message.png" style=""></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
+                						</div>
+															
+	</div>
+</li>
+	
+	<li class="item calc-price-box">
+                		
+                			<a href="">
+                			<div class="course-list-img">
+                		<img alt="Image" src="Images/images/NV4.jpeg">
+                		</div>
+                		<h5><span><font><font>Cindy, 19 toronto</font></font></span></h5><div class="intro">
+                			<p><font><font>Cindy, 19 toronto </font></font></p>
+                			
+                			<span class="l">
+                			<font>
+                				<font>  	</font></font>
+                				</span> 
+                				<span class="r"><font><font> </font></font></span></div>
+                				
+                				<div class="tips">
+                					<span class="l">
+                					<font><font> </font></font>
+                					</span> 
+                					 <span class="r"><font><font> </font></font></span>
+                					</div></a>
+                					
+                					<div class="hover hover1 course-list-img">
+                						<div class="sub_div_hover" >
+                						<a href="" >
+                							<img class="img_hover" src="Images/message.png" style=""></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
+                						</div>
+															
+	</div>
+</li>
+	
+		
                    				
                 					 </ul>
 

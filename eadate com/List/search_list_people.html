@@ -7,8 +7,6 @@
 EaDate
 </title>
 
-
-
 <script type="text/javascript">
  //var OP_CONFIG={"module":"course","page":"list"};
   //var seajsTimestamp="201412181838"; 
@@ -16,20 +14,20 @@ EaDate
 
 <script type="text/javascript" src="js/hover_effect.js"></script>
 
-		<script type="text/javascript" language="JavaScript">
+<script type="text/javascript" language="JavaScript">
 		
 jQuery.noConflict();
-jQuery( document ).ready(function( $ ) {
+jQuery( document ).ready(function( $ ) 
+{
   // Code that uses jQuery's $ can follow here.
-  
 $('.course-category').hover(
 function () {
-   // $(this).addClass('hover');
-   // alert($(this).css('height'));
-    //$(".dot-sidebar-curr").css('Top','60px');
+  
+    $(".dot-sidebar-curr").css('top',$(this).index()*60+'px');
     
 }, function () {
     $(this).removeClass('hover');
+  
 });
 
 
@@ -40,9 +38,11 @@ $('.all_set').click(
 		$(".course-sidebar-type .active").removeClass("active");
 	}	
 );
+
 $('.course-category-sort a ').click(
 function () 
 {
+	$(".dot-sidebar-curr").css('top',$(this).closest('.course-category').index()*60+'px');
 	$(this).closest('.course-category').find('a').removeClass("active");
     $(this).addClass('active');
     
@@ -87,8 +87,7 @@ $('.course-filter_disp_m a').click(
   	$(this).closest('.course-filter_disp_m').find('span').html(": "+$(this).html());
    } 
    else
-   {
-   		
+   {   		
    		 $(this).closest('.course-filter_disp_m').find('span').html(" ");
    }
 	}
@@ -121,8 +120,8 @@ $('.course-filter_disp_m a').click(
 
 
 
-<link rel="stylesheet" href="CSS/course_list.css" type="text/css" />
-<link rel="stylesheet" href="CSS/body_li.css" type="text/css" />
+<link rel="stylesheet" href="css/course_list.css" type="text/css" />
+<link rel="stylesheet" href="css/body_li.css" type="text/css" />
 
 </head> 
 <body  id="List_courseId">	
@@ -251,11 +250,7 @@ $('.course-filter_disp_m a').click(
                     	
                     </li>
                              
-                             
-                             
-                       <li class="course-category curr " style="height:auto;">
-                    	
-                    	
+                      
                      
                                  
  <li class="course-category curr " style="height:auto;" 	>
@@ -407,7 +402,7 @@ $('.course-filter_disp_m a').click(
                 </div>
                  <div class="course-filter_disp_m">
 			 	Display Method<span id="span_dispm"></span>
-                    <div class="course-sidebar-filter course-category-sort" style="display: none;">
+                    <div class="course-sidebar-filter" style="display: none;">
                         <div class="course-sidebar-filter-bg"></div>
                         <ul>
                             <li>
@@ -426,7 +421,7 @@ $('.course-filter_disp_m a').click(
                      </div>                    
                 </div>
                 
-                
+                <h2></h2>
             </div>
             
         

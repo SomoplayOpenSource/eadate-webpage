@@ -1,421 +1,796 @@
+
 <!DOCTYPE html>
-<html lange="en">
+<html>
 <head>
-<link rel="stylesheet" type="text/css" href="CSS/people_list.css">
-<link rel="stylesheet" type="text/css" href="CSS/list_people_item.css">
-<style type="text/css">
-body,td,th {
-	font-family: Arial, Helvetica, sans-serif;
-}
-</style>
-<meta charset="utf-8" />
-<title>Search_people</title>
-</head>
-
-<body>
-	<div id="main">
-		<div id="header">
-			<!--headerbar-->
-			<div id="headerblock">
-				<table width="1340" height="150" border="0">
-					<tr>
-						<td width="385"><img src="Images/logo.png" width="384"
-							height="118" alt="Logo" title="eat" align="left" />
-						</td>
-						<td width="500"><label for="search"></label>
-							<table width="478" border="0">
-								<form id="searchbar">
-									<div id="searchicon">
-										<img src="Images/search.png" width="45" height="45">
-									</div>
-									<input id="searchword"> <input id="searchgo"
-										type="submit" value="GO">
-								</form>
-							</table>
-						</td>
-						<td width="441"><a href="Index.html"><img
-								src="Images/alert.png" alt="" width="39" height="40" id="bell">
-						</a> <a href="Index.html"><img src="Images/email.png" alt=""
-								width="42" height="42" id="mail"> </a> <a href="Index.html"><img
-								src="Images/user1.png" alt="" width="79" height="81" id="user">
-								<img src="Images/down more.png" alt="" width="25" height="15"
-								id="button1"> </a>
-						</td>
-					</tr>
-				</table>
-
-			</div>
-			<!--hearderfunctionbar-->
-
-			<div id="headerbar">
-				<ul>
-					<li><a href="">HOME</a>
-					</li>
-					<li><a href="">PEOPLE</a>
-					</li>
-					<li><a href="">SCENES</a>
-					</li>
-					<li><a href="">ACTIVITY</a>
-					</li>
-					<li><a href="">DEAL</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!--- End of header--->
-
-		<div id="wrapper">
-
-			<div id="PeopleSearchMainContent">
-				<!--- The main content of serach paople list --->
-				<div id="PeopleSearchLeftBar">
-					<!---Filter --->
-					<h1>Filters:</h1>
-					<h2>Profile Type</h2>
-					<hr size=1 class="dottedLine">
-					<form>
-						<input type="checkbox" name="Dating" value="Dating">Dating
-						<input type="checkbox" name="Foodie" value="Foodie">Foodie<br>
-					</form>
-					<br />
-					<h2>Gender</h2>
-					<hr size=1 class="dottedLine">
-					<form>
-						<input type="checkbox" name="Male" value="Male">Male <input
-							type="checkbox" name="Female" value="Female">Female<br>
-					</form>
-					<br />
-					<h2>Age</h2>
-					<hr size=1 class="dottedLine">
-					<select class="select" name="From">
-						<option value="">From</option>
-						<option value="18">18</option>
-						<option value="19">19</option>
-						<option value="20">20</option>
-						<option value="21">21</option>
-						<option value="22">22</option>
-						<option value="23">23</option>
-
-					</select> <select class="select" name="To">
-						<option value="">To</option>
-						<option value="18">18</option>
-						<option value="19">19</option>
-						<option value="20">20</option>
-						<option value="21">21</option>
-						<option value="22">22</option>
-						<option value="23">23</option>
-
-					</select>
-					<h2>Location</h2>
-					<hr size=1 class="dottedLine">
-					<select class="select_location"	name="location">
-						<option value="North York">North York</option>
-						<option value="Markham">Markham</option>
-						<option value="Richmond">Richmond Hill</option>
-						<option value="Toronto">Toronto</option>
-						<option value="Vaughan">Vaughan</option>
-					</select>
+<meta charset="utf-8">
+<title>
+EaDate
+</title>
 
 
-				</div>
-				<!--end of PeopleSearchLeftBar-->
 
-				<div id="PeopleSearchRightContent">
-					<!---People list --->
-					<div id="search_people">
-			<form class=" navbar-form
-						navbar-left" role="search">
-						<table width="700" border="0">
-							<form id="searchbar">
-								<div id="searchicon_main">
-									<img src="Images/search.png" width="45" height="45">
-								</div>
-								<input id="searchword_main"> <input id="searchgo"
-									type="submit" value="GO">
-							</form>
-						</table>
-						</form>
-					</div>
-					<table width="885" height="41" border="0">
-						<tr>
-							<td width="246">Sorted By: <select class="select" name="sort">
-									<option value="">18</option>
-									<option value="">19</option>
-									<option value="">20</option>
-									<option value="">21</option>
-									<option value="">22</option>
-									<option value="">23</option>
-							</select>
-							</td>
-							<td width="202">Display Method: <select class="select" name="display">
-									<option value="">18</option>
-									<option value="">19</option>
-									<option value="">20</option>
-									<option value="">21</option>
-									<option value="">22</option>
-									<option value="">23</option>
-							</select>
-							</td>
-							<td width="177">&nbsp;</td>
-							<td width="242">01 / 03 
-                            <input type="image" class = "upDown" src="Images/left.png"/>
-                          <input type="image" class = "upDown" src="Images/right.png"/>
-						  </td>
-						</tr>
-					</table>
-					<hr size=1 class="dottedLine">
-					<ul>
-						<li>
-							<table width="357" border="0">
-								<tr>
-									<td width="180" height="183">
-										<div class="imageDiv_bigger">
-                                        <img src="Images/user2.png" alt="follow" width="177" height="170" class="circular_bugger">
-											<div class="buttons">
-												<a href="#"><img src="Images/add_friends.png" alt="add friend" class="like_scenes"></a> <a href="#"><img src="Images/right2.png" alt="right" class="right"></a> <a href="#"><img src="Images/left2.png" alt="left" class="left"></a>
-											</div>
-										</div>
-									</td>
-									<td width="160"><table width="108" height="139" border="0">
-											<tr>
-												<td width="102" height="20"><p>Name</p>
-												</td>
-											</tr>
-											<tr>
-												<td height="10">Detail</td>
-											</tr>
-											<tr>
-											  <td height="86"><div class="place_small"></div></td>
-									  </tr>
-										</table>
-										<p>&nbsp;</p>
-								  </td>
-								</tr>
-							</table></li>
-						<li>
-						  <table width="357" border="0">
-						    <tr>
-						      <td width="180" height="183"><div class="imageDiv_bigger"> <img src="Images/user2.png" alt="follow" width="177" height="170" class="circular_bugger">
-						        <div class="buttons"> <a href="#"><img src="Images/add_friends.png" alt="add friend" class="like_scenes"></a> <a href="#"><img src="Images/right2.png" alt="right" class="right"></a> <a href="#"><img src="Images/left2.png" alt="left" class="left"></a> </div>
-						        </div></td>
-						      <td width="160"><table width="108" height="139" border="0">
-						        <tr>
-						          <td width="102" height="20"><p>Name</p></td>
-					            </tr>
-						        <tr>
-						          <td height="10">Detail</td>
-					            </tr>
-						        <tr>
-						          <td height="86"><div class="place_small"></div></td>
-					            </tr>
-						        </table>
-						        <p>&nbsp;</p></td>
-					        </tr>
-					      </table>
-						</li>
-						<li>
-						  <table width="357" border="0">
-						    <tr>
-						      <td width="180" height="183"><div class="imageDiv_bigger"> <img src="Images/user2.png" alt="follow" width="177" height="170" class="circular_bugger">
-						        <div class="buttons"> <a href="#"><img src="Images/add_friends.png" alt="add friend" class="like_scenes"></a> <a href="#"><img src="Images/right2.png" alt="right" class="right"></a> <a href="#"><img src="Images/left2.png" alt="left" class="left"></a> </div>
-						        </div></td>
-						      <td width="160"><table width="108" height="139" border="0">
-						        <tr>
-						          <td width="102" height="20"><p>Name</p></td>
-					            </tr>
-						        <tr>
-						          <td height="10">Detail</td>
-					            </tr>
-						        <tr>
-						          <td height="86"><div class="place_small"></div></td>
-					            </tr>
-						        </table>
-						        <p>&nbsp;</p></td>
-					        </tr>
-					      </table>
-						</li>
-						<li>
-						  <table width="357" border="0">
-						    <tr>
-						      <td width="180" height="183"><div class="imageDiv_bigger"> <img src="Images/user2.png" alt="follow" width="177" height="170" class="circular_bugger">
-						        <div class="buttons"> <a href="#"><img src="Images/add_friends.png" alt="add friend" class="like_scenes"></a> <a href="#"><img src="Images/right2.png" alt="right" class="right"></a> <a href="#"><img src="Images/left2.png" alt="left" class="left"></a> </div>
-						        </div></td>
-						      <td width="160"><table width="108" height="139" border="0">
-						        <tr>
-						          <td width="102" height="20"><p>Name</p></td>
-					            </tr>
-						        <tr>
-						          <td height="10">Detail</td>
-					            </tr>
-						        <tr>
-						          <td height="86"><div class="place_small"></div></td>
-					            </tr>
-						        </table>
-						        <p>&nbsp;</p></td>
-					        </tr>
-					      </table>
-						</li>
-					 <li>
-					   <table width="357" border="0">
-					     <tr>
-					       <td width="180" height="183"><div class="imageDiv_bigger"> <img src="Images/user2.png" alt="follow" width="177" height="170" class="circular_bugger">
-					         <div class="buttons"> <a href="#"><img src="Images/add_friends.png" alt="add friend" class="like_scenes"></a> <a href="#"><img src="Images/right2.png" alt="right" class="right"></a> <a href="#"><img src="Images/left2.png" alt="left" class="left"></a> </div>
-					         </div></td>
-					       <td width="160"><table width="108" height="139" border="0">
-					         <tr>
-					           <td width="102" height="20"><p>Name</p></td>
-				             </tr>
-					         <tr>
-					           <td height="10">Detail</td>
-				             </tr>
-					         <tr>
-					           <td height="86"><div class="place_small"></div></td>
-				             </tr>
-					         </table>
-					         <p>&nbsp;</p></td>
-				         </tr>
-				       </table>
-					 </li>
-                     <li>
-                       <table width="357" border="0">
-                         <tr>
-                           <td width="180" height="183"><div class="imageDiv_bigger"> <img src="Images/user2.png" alt="follow" width="177" height="170" class="circular_bugger">
-                             <div class="buttons"> <a href="#"><img src="Images/add_friends.png" alt="add friend" class="like_scenes"></a> <a href="#"><img src="Images/right2.png" alt="right" class="right"></a> <a href="#"><img src="Images/left2.png" alt="left" class="left"></a> </div>
-                           </div></td>
-                           <td width="160"><table width="108" height="139" border="0">
-                             <tr>
-                               <td width="102" height="20"><p>Name</p></td>
-                             </tr>
-                             <tr>
-                               <td height="10">Detail</td>
-                             </tr>
-                             <tr>
-                               <td height="86"><div class="place_small"></div></td>
-                             </tr>
-                           </table>
-                             <p>&nbsp;</p></td>
-                         </tr>
-                       </table>
-                     </li>
-					  <li>
-					    <table width="357" border="0">
-					      <tr>
-					        <td width="180" height="183"><div class="imageDiv_bigger"> <img src="Images/user2.png" alt="follow" width="177" height="170" class="circular_bugger">
-					          <div class="buttons"> <a href="#"><img src="Images/add_friends.png" alt="add friend" class="like_scenes"></a> <a href="#"><img src="Images/right2.png" alt="right" class="right"></a> <a href="#"><img src="Images/left2.png" alt="left" class="left"></a> </div>
-					          </div></td>
-					        <td width="160"><table width="108" height="139" border="0">
-					          <tr>
-					            <td width="102" height="20"><p>Name</p></td>
-				              </tr>
-					          <tr>
-					            <td height="10">Detail</td>
-				              </tr>
-					          <tr>
-					            <td height="86"><div class="place_small"></div></td>
-				              </tr>
-					          </table>
-					          <p>&nbsp;</p></td>
-				          </tr>
-				        </table>
-					  </li>
-					  <li>
-					    <table width="357" border="0">
-					      <tr>
-					        <td width="180" height="183"><div class="imageDiv_bigger"> <img src="Images/user2.png" alt="follow" width="177" height="170" class="circular_bugger">
-					          <div class="buttons"> <a href="#"><img src="Images/add_friends.png" alt="add friend" class="like_scenes"></a> <a href="#"><img src="Images/right2.png" alt="right" class="right"></a> <a href="#"><img src="Images/left2.png" alt="left" class="left"></a> </div>
-					          </div></td>
-					        <td width="160"><table width="108" height="139" border="0">
-					          <tr>
-					            <td width="102" height="20"><p>Name</p></td>
-				              </tr>
-					          <tr>
-					            <td height="10">Detail</td>
-				              </tr>
-					          <tr>
-					            <td height="86"><div class="place_small"></div></td>
-				              </tr>
-					          </table>
-					          <p>&nbsp;</p></td>
-				          </tr>
-				        </table>
-					  </li>
-					  <li>
-					    <table width="357" border="0">
-					      <tr>
-					        <td width="180" height="183"><div class="imageDiv_bigger"> <img src="Images/user2.png" alt="follow" width="177" height="170" class="circular_bugger">
-					          <div class="buttons"> <a href="#"><img src="Images/add_friends.png" alt="add friend" class="like_scenes"></a> <a href="#"><img src="Images/right2.png" alt="right" class="right"></a> <a href="#"><img src="Images/left2.png" alt="left" class="left"></a> </div>
-					          </div></td>
-					        <td width="160"><table width="108" height="139" border="0">
-					          <tr>
-					            <td width="102" height="20"><p>Name</p></td>
-				              </tr>
-					          <tr>
-					            <td height="10">Detail</td>
-				              </tr>
-					          <tr>
-					            <td height="86"><div class="place_small"></div></td>
-				              </tr>
-					          </table>
-					          <p>&nbsp;</p></td>
-				          </tr>
-				        </table>
-					  </li>
-                      <li>
-					    <table width="357" border="0">
-					      <tr>
-					        <td width="180" height="183"><div class="imageDiv_bigger"> <img src="Images/user2.png" alt="follow" width="177" height="170" class="circular_bugger">
-					          <div class="buttons"> <a href="#"><img src="Images/add_friends.png" alt="add friend" class="like_scenes"></a> <a href="#"><img src="Images/right2.png" alt="right" class="right"></a> <a href="#"><img src="Images/left2.png" alt="left" class="left"></a> </div>
-					          </div></td>
-					        <td width="160"><table width="108" height="139" border="0">
-					          <tr>
-					            <td width="102" height="20"><p>Name</p></td>
-				              </tr>
-					          <tr>
-					            <td height="10">Detail</td>
-				              </tr>
-					          <tr>
-					            <td height="86"><div class="place_small"></div></td>
-				              </tr>
-					          </table>
-					          <p>&nbsp;</p></td>
-				          </tr>
-				        </table>
-					  </li>
-					  <!--end of PeopleSearchRightContent-->
-					</ul>
-				</div>
-			</div>
-			<!--end of PeopleSearchMainContent-->
+<script type="text/javascript">
+ //var OP_CONFIG={"module":"course","page":"list"};
+  //var seajsTimestamp="201412181838"; 
+</script>
 
-			<div id="footer">
-				<div id="footerbar" align="center">
-					<ul>
-						<li><a href="">About us</a>
-						</li>
-						<li><a href="">News</a>
-						</li>
-						<li><a href="">Term of Use</a>
-						</li>
-						<li><a href="">Privacy Police</a>
-						</li>
-						<li><a href="">Help & FAQs</a>
-						</li>
-						<li><a href="">Contact us</a>
-						</li>
-						<li><a href="">Site Map</a>
-						</li>
-					</ul>
-				</div>
-				<!--footerbar-->
-				<div id="footerwords" align="center">copyright 2014, Somoplay
-					Inc, All Rights Reserved.</div>
-			</div>
-			<!--footer-->
+<script type="text/javascript" src="js/hover_effect.js"></script>
 
-		</div>
+		<script type="text/javascript" language="JavaScript">
+		
+		jQuery.noConflict();
+jQuery( document ).ready(function( $ ) {
+  // Code that uses jQuery's $ can follow here.
+  
+$('.course-category').hover(
+function () {
+   // $(this).addClass('hover');
+   //alert($(this).index());
+    $(".dot-sidebar-curr").css('top',$(this).index()*60+'px');
+    
+}, function () {
+    $(this).removeClass('hover');
+   // $(".dot-sidebar-curr").css('top','0px');
+});
+
+$('.all_set').click(
+	function()
+	{
+		$(this).closest('.course-sidebar-type').find('.course-category-link span').html(" ");
+		$(".course-sidebar-type .active").removeClass("active");
+	}	
+);
+$('.course-category-sort a ').click(
+function () 
+{
+	$(".dot-sidebar-curr").css('top',$(this).closest('.course-category').index()*60+'px');
+	$(this).closest('.course-category').find('a').removeClass("active");
+    $(this).addClass('active');
+    
+   if($(this).hasClass('active') && $(this).html()!='All')
+   {
+  	$(this).closest('.course-category').find('.course-category-link span').html(": "+$(this).html());
+   } 
+   else
+   {
+   		 $(this).closest('.course-category').find('.course-category-link span').html(" ");
+   }
+});
+
+$('.course-filter_sortby a').click(
+	function()
+	{
+		
+		$(this).closest('.course-filter_sortby').find('a').removeClass("active");
+    	$(this).addClass('active');
+	
+	if($(this).hasClass('active') && $(this).html()!='default')
+   {
+  	$(this).closest('.course-filter_sortby').find('span').html(": "+$(this).html());
+   } 
+   else
+   {
+   		
+   		 $(this).closest('.course-filter_sortby').find('span').html(" ");
+   }
+	}
+);
+$('.course-filter_disp_m a').click(
+	function()
+	{
+		
+		$(this).closest('.course-filter_disp_m').find('a').removeClass("active");
+    	$(this).addClass('active');
+	
+	if($(this).hasClass('active') && $(this).html()!='default')
+   {
+  		
+  	$(this).closest('.course-filter_disp_m').find('span').html(": "+$(this).html());
+   } 
+   else
+   {
+   		
+   		 $(this).closest('.course-filter_disp_m').find('span').html(" ");
+   }
+	}
+);
+
+});
+		
+
+
+
+		//<![CDATA[
+			var Shopper = {};
+			//Shopper.url = 'http://www.youfan.ca/';
+			Shopper.store = 'default';
+			Shopper.category = '';
+			Shopper.price_circle = 1;
+			Shopper.fixed_header = 1;
+			Shopper.totop = 1;
+			Shopper.responsive = 1;
+			Shopper.quick_view = 1;
+			Shopper.shopby_num = '5';
+			Shopper.text = {};
+			Shopper.text.more = 'more...';
+			Shopper.text.less = 'less...';
+			Shopper.anystretch_bg = '';
+			//]]>
+		 
+             
+              </script>   
+
+
+
+<link rel="stylesheet" href="css/course_list.css" type="text/css" />
+<link rel="stylesheet" href="css/body_li.css" type="text/css" />
+
+</head> 
+<body  id="List_courseId">	
+
+<div id="header">  
+    <div class="container" id="nav">
+    	
+        <div id="logo">
+        <a href="/" target="_self"><img src="Images/logo.png" id="logoimg" height="69px" width="200px" ></a>
+        	      	
+        </div>  
+       
+        
+                <ul class="l" id="nav-item">
+            <li>
+                <a href="/course/list" target="_self">HOME</a>
+            </li>
+            <li>
+                <a href="/wenda" target="_self">PEOPLE</a>
+            </li>
+            <li>
+                <a href="/seek/index" target="_self">SCENES</a>
+            </li>
+            <li>
+                <a href="/seek/index" target="_self">ACTIVITY</a>
+            </li>
+        </ul> 
+        <div id="login-area">
+            <ul class="header-unlogin clearfix">
+
+                <li class="header-signin">
+                    <a href="#" id="js-signin-btn">
+                    	<img src="Images/remainder.png" id="alarmimg" height="20px" width="20px">
+                    	0                    	
+                    </a>
+                </li>
+                <li class="header-signup">
+                   <a href="#" id="js-signin-btn">
+                    	<img src="Images/email.png" id="alarmimg" height="15px" width="25px">
+                    	0
+                    </a>
+                </li>
+                 <li class="header-signup">
+                   <a href="#" id="js-signin-btn">
+                    	<img src="Images/user(2).png" id="alarmimg" width="40px" height="55px" style="margin-top: 20px;vertical-align: top;"> 0             	
+                    </a>
+                </li>
+            </ul>
+        </div>            
+        	</div>
+</div>
+
+
+<div class="course-nav">
+    <ul>
+        <!-- <li><a href="/course/discovery">sfds</a></li>
+        <li><a href="/course/list" class="curr">sfdsf</a></li>
+        <li><a href="/course/program">sfdsf</a></li>
+        <li><a href="/corp/index">sd</a></li>
+        -->
+    </ul>
+</div>
+
+<div id="main">
+
+    <div class="container">
+        <div class="course-sidebar">
+            <div class="course-sidebar-type">
+                                <ul>
+                                	 <li class="course-category curr " style="height:auto;">
+                    	
+    <a  class="course-category-link all_set"  style="cursor: pointer;" data-id="1" >All</a>
+                 	
+                    </li>
+                    
+                 
+          <li class="course-category curr " style="height:auto;" >
+                    	
+    <a  class="course-category-link"  data-id="1" >Type<span > </span></a>
+    
+      <div class="course-category-sort" id="div_pt" style="display: none;">
+         <div class="course-category-sort-bg"></div>
+            <ul>
+            	
+            	
+          <li><a id="a_dating" data-id="7"  style="cursor: pointer;">Lunch</a></li>
+                                                            
+          <li> <a  id="a_foodie"  data-id="44" style="cursor: pointer;">Dinner</a></li>
+           
+           <li> <a  id="a_foodie"  data-id="44" style="cursor: pointer;">Movie</a></li>                                                  
+                                                            
+		<li><a  id="a_all"  data-id="44" style="cursor: pointer;">All</a></li>
+                                                          </ul>
+                        </div>    
+                    	
+                    </li>
+                    
+                     
+                             
+                      
+                     
+                                 
+ <li class="course-category curr " style="height:auto;" 	>
+                    	
+                    	<a  class="course-category-link" data-id="1" >Minimum Price<span id="span_minage"> </span></a>
+                    		
+                                  <div class="course-category-sort" id="div_min_age" style="display: none;">
+                            <div class="course-category-sort-bg"></div>
+                            <ul>
+                                                            <li>
+                                                            	
+                                                            	<a id="a_min18" data-id="7"  style="cursor: pointer;">100</a></li>
+                                                             <li>
+                                                             
+                                                             	<a id="a_min19" data-id="7"  style="cursor: pointer;">200</a></li>
+                                                              <li>
+                                                              	
+                                                              	<a id="a_min20" data-id="7"  style="cursor: pointer;">300</a></li>
+                                                               <li>
+                                                               
+                                                               	<a id="a_min21" data-id="7"  style="cursor: pointer;">400</a></li>
+                                                                <li>
+                                                                	
+                                                                	
+                                                                	<a id="a_min22" data-id="7"  style="cursor: pointer;">500</a></li>
+                                                                 <li>
+                                                                 	
+                                                                 	<a id="a_min23" data-id="7" style="cursor: pointer;">600</a></li>
+                                                                 
+                                                                 
+                                                                  <li>
+                                                                  	
+                                                                  	<a id="a_min24" data-id="7"  style="cursor: pointer;">All</a></li>
+                                                                  
+                                                           
+                                                          </ul>
+                        </div>    
+                    	
+                    </li>
+      
+      
+       <li class="course-category curr " style="height:auto;" >
+                    	
+                    	<a  class="course-category-link" data-id="1" >Maximum Price<span id="span_maxage"> </span></a>
+                    		
+                                  <div class="course-category-sort" id="div_max_age" style="display: none;">
+                            <div class="course-category-sort-bg"></div>
+                            <ul>
+                                                            <li>
+                                                            	
+                                                            	<a id="a_max18" data-id="7"  style="cursor: pointer;">100</a></li>
+                                                             <li>
+                                                             	
+                                                             	<a id="a_max19" data-id="7"  style="cursor: pointer;">200</a></li>
+                                                              <li>
+                                                              	
+                                                              		
+                                                              	<a id="a_max20" data-id="7"  style="cursor: pointer;">300</a></li>
+                                                               <li>
+                                                               
+                                                               	<a id="a_max21" data-id="7"  style="cursor: pointer;">400</a></li>
+                                                                <li>
+                                                                	
+                                                                	<a id="a_max22" data-id="7"  style="cursor: pointer;">500</a></li>
+                                                                 <li>
+                                                                 	
+                                                                 	<a id="a_max23" data-id="7"  style="cursor: pointer;">600</a></li>
+                                                                 
+                                                                 <li>
+                                                                 	
+                                                                 	<a id="a_max24" data-id="7" >All</a></li>
+                                                           
+                                                          </ul>
+                        </div>    
+                    	
+                    </li>
+      
+     
+      
+      <li class="course-category curr " style="height:auto;" 	>
+                    	
+                    	<a  class="course-category-link" data-id="1" >Location<span id="span_loc"> </span></a>
+                    		
+                                  <div class="course-category-sort" id="div_loc" style="display: none;">
+                            <div class="course-category-sort-bg"></div>
+                            <ul>
+                                                            <li>
+                                                            	
+                                                            	
+                                                            	<a id="a_loc1" data-id="7"  style="cursor: pointer;">North York</a></li>
+                                                             <li>
+                                                             	
+                                                             	<a id="a_loc2" data-id="7"  style="cursor: pointer;">Markham</a></li>
+                                                              <li>
+                                                              	
+                                                              	<a id="a_loc3" data-id="7"  style="cursor: pointer;">Richmond Hill</a></li>
+                                                               <li>
+                                                               
+                                                               	<a id="a_loc4" data-id="7"  style="cursor: pointer;">Toronto</a></li>
+                                                                <li>
+                                                                	
+                                                                	<a id="a_loc5" data-id="7"  style="cursor: pointer;">Vaughan</a></li>
+                                                                
+                                                                <li>
+                                                                	
+                                                                	<a id="a_loc6" data-id="7"  style="cursor: pointer;">All</a></li>
+                                                                 
+                                                          </ul>
+                        </div>    
+                    	
+                    </li>
+      
+      
+      
+      <li class="course-category curr " style="height:auto;" 	>
+                    	
+                    	<a  class="course-category-link" data-id="1" >Liked<span id="span_loc"> </span></a>
+                    		
+                                  <div class="course-category-sort" id="div_loc" style="display: none;">
+                            <div class="course-category-sort-bg"></div>
+                            <ul>
+                                                            <li>
+                                                            	
+                                                            	
+                                                            	<a id="a_loc1" data-id="7"  style="cursor: pointer;">1</a></li>
+                                                             <li>
+                                                             	
+                                                             	<a id="a_loc2" data-id="7"  style="cursor: pointer;">2</a></li>
+                                                              <li>
+                                                              	
+                                                              	<a id="a_loc3" data-id="7"  style="cursor: pointer;">3</a></li>
+                                                               <li>
+                                                               
+                                                               	<a id="a_loc4" data-id="7"  style="cursor: pointer;">4</a></li>
+                                                                <li>
+                                                                	
+                                                                	<a id="a_loc5" data-id="7"  style="cursor: pointer;">5</a></li>
+                                                                
+                                                                <li>
+                                                                	
+                                                                	<a id="a_loc6" data-id="7"  style="cursor: pointer;">All</a></li>
+                                                                 
+                                                          </ul>
+                        </div>    
+                    	
+                    </li>
+                                       
+                                       
+                                       
+       <li class="course-category curr " style="height:auto;" 	>
+                    	
+                    	<a  class="course-category-link" data-id="1" >Inviter<span id="span_loc"> </span></a>
+
+					
+                                  <div class="course-category-sort" id="div_loc" style="display: none;">
+                            <div class="course-category-sort-bg"></div>
+                            <ul>
+                                                            <li>
+                                                            	
+                                                            	
+                                                            	<a id="a_loc1" data-id="7"  style="cursor: pointer;">abc</a></li>
+                                                             <li>
+                                                             	
+                                                             	<a id="a_loc2" data-id="7"  style="cursor: pointer;">pqr</a></li>
+                                                           
+                                                                <li>
+                                                                	
+                                                                	<a id="a_loc6" data-id="7"  style="cursor: pointer;">All</a></li>
+                                                                 
+                                                          </ul>
+                        </div>    
+                    	
+                    </li>
+           
+         <li class="course-category curr " style="height:auto;" 	>
+                    	
+                    	<a  class="course-category-link" data-id="1" >Payment<span id="span_loc"> </span></a>
+
+					
+                                  <div class="course-category-sort" id="div_loc" style="display: none;">
+                            <div class="course-category-sort-bg"></div>
+                            <ul>
+                                                            <li>
+                                                            	
+                                                            	
+                                                            	<a id="a_loc1" data-id="7"  style="cursor: pointer;">My Treat</a></li>
+                                                             <li>
+                                                             	
+                                                             	<a id="a_loc2" data-id="7"  style="cursor: pointer;">Your Treat</a></li>
+  
+  <li>
+                                                             	
+                                                             	<a id="a_loc2" data-id="7"  style="cursor: pointer;">All</a></li>                                                            <li>
+                                                              	
+                                                              	
+                                                                 
+                                                          </ul>
+                        </div>    
+                    	
+                    </li>
+           
+        
+        
+                      </ul>
+                <div class="dot-sidebar-curr" style="top:0px"></div>
+            </div>
+
+        </div>
+        
+      
+        <div class="course-content">
+            <div class="course-tools">
+            	
+            	
+                 
+					
+			
+					
+			 <div class="course-filter_sortby">
+			 	Sorted By<span id="span_sortby"></span>
+                    <div class="course-sidebar-filter" style="display: none;">
+                       <div class="course-sidebar-filter-bg"></div>
+                        <ul>
+                            <li>
+                            	
+                            	<a id="a_sortby1" data-id="7"  style="cursor: pointer;">Age</a></li>
+                            <li>
+                            	
+                            	<a id="a_sortby2" data-id="7"  style="cursor: pointer;">Name</a></li>
+                            <li>
+                            	
+                            	<a id="a_sortby3" data-id="7"  style="cursor: pointer;">Updated</a></li>
+                            <li>
+                            	
+                            	<a id="a_sortby4" data-id="7"  style="cursor: pointer;">default</a></li>
+                            
+                       </ul>
+                     </div>                            
+                </div>
+                 <div class="course-filter_disp_m">
+			 	Display Method<span id="span_dispm"></span>
+                    <div class="course-sidebar-filter course-category-sort" style="display: none;">
+                        <div class="course-sidebar-filter-bg"></div>
+                        <ul>
+                            <li>
+                            	
+                            	<a id="a_dispm1" data-id="7"  style="cursor: pointer;">Map</a></li>
+                            <li>
+                            	<a id="a_dispm2" data-id="7" style="cursor: pointer;">List</a></li>
+                            <li>
+                            	
+                            	<a id="a_dispm3" data-id="7"  style="cursor: pointer;">Grid</a></li>
+                            <li>
+                            		                         	
+                            	
+                            	<a id="a_dispm4" data-id="7"  style="cursor: pointer;">default</a></li>
+                       </ul>
+                     </div>                    
+                </div>
+                
+                
+            </div>
+            
+        
+		
+            <div class="course-list">
+                <div class="js-course-list">
+                	
+                	<ul class="products-grid two_columns_3">
+               
+
+
+
+<li class="item calc-price-box">
+                		
+                			<a href="">
+                			<div class="course-list-img">
+                		<img alt="Image" src="Images/images/NV 1.jpeg">
+                		</div>
+                		<h5><span><font><font>Cindy, 19 toronto</font></font></span></h5><div class="intro">
+                			<p><font><font>Cindy, 19 toronto </font></font></p>
+                			
+                			<span class="l">
+                			<font>
+                				<font>  	</font></font>
+                				</span> 
+                				<span class="r"><font><font> </font></font></span></div>
+                				
+                				<div class="tips">
+                					<span class="l">
+                					<font><font> </font></font>
+                					</span> 
+                					 <span class="r"><font><font> </font></font></span>
+                					</div></a>
+                					
+                					<div class="hover hover1 course-list-img" >
+                						<div class="sub_div_hover" >
+                						<a href="" >
+                							<img class="img_hover" src="Images/message.png" style=""></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
+                						
+                						<a href="" style="float: left;">
+                							<img class="img_3rd_part" src="Images/images/FD1.jpg" >	</a>
+                						</div>
+                									
 	</div>
+</li>
+
+<li class="item calc-price-box">
+                		
+                			<a href="">
+                			<div class="course-list-img">
+                		<img alt="Image" src="Images/images/NV2.jpg">
+                		</div>
+                		<h5><span><font><font>Cindy, 19 toronto</font></font></span></h5><div class="intro">
+                			<p><font><font>Cindy, 19 toronto </font></font></p>
+                			
+                			<span class="l">
+                			<font>
+                				<font>  	</font></font>
+                				</span> 
+                				<span class="r"><font><font> </font></font></span></div>
+                				
+                				<div class="tips">
+                					<span class="l">
+                					<font><font> </font></font>
+                					</span> 
+                					 <span class="r"><font><font> </font></font></span>
+                					</div></a>
+                					
+                					<div class="hover hover1 course-list-img" >
+                						<div class="sub_div_hover" >
+                						<a href="" >
+                							<img class="img_hover" src="Images/message.png" style=""></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
+                						
+                						<a href="" style="float: left;">
+                							<img class="img_3rd_part" src="Images/images/FD2.jpg" >	</a>
+                						</div>
+                									
+	</div>
+</li>
+
+<li class="item calc-price-box">
+                		
+                			<a href="">
+                			<div class="course-list-img">
+                		<img alt="Image" src="Images/images/NV3.jpg">
+                		</div>
+                		<h5><span><font><font>Cindy, 19 toronto</font></font></span></h5><div class="intro">
+                			<p><font><font>Cindy, 19 toronto </font></font></p>
+                			
+                			<span class="l">
+                			<font>
+                				<font>  	</font></font>
+                				</span> 
+                				<span class="r"><font><font> </font></font></span></div>
+                				
+                				<div class="tips">
+                					<span class="l">
+                					<font><font> </font></font>
+                					</span> 
+                					 <span class="r"><font><font> </font></font></span>
+                					</div></a>
+                					
+                					<div class="hover hover1 course-list-img" >
+                						<div class="sub_div_hover" >
+                						<a href="" >
+                							<img class="img_hover" src="Images/message.png" style=""></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
+                						
+                						<a href="" style="float: left;">
+                							<img class="img_3rd_part" src="Images/images/FD3.jpg" >	</a>
+                						</div>
+                									
+	</div>
+</li>
+
+<li class="item calc-price-box">
+                		
+                			<a href="">
+                			<div class="course-list-img">
+                		<img alt="Image" src="Images/images/NV4.jpeg">
+                		</div>
+                		<h5><span><font><font>Cindy, 19 toronto</font></font></span></h5><div class="intro">
+                			<p><font><font>Cindy, 19 toronto </font></font></p>
+                			
+                			<span class="l">
+                			<font>
+                				<font>  	</font></font>
+                				</span> 
+                				<span class="r"><font><font> </font></font></span></div>
+                				
+                				<div class="tips">
+                					<span class="l">
+                					<font><font> </font></font>
+                					</span> 
+                					 <span class="r"><font><font> </font></font></span>
+                					</div></a>
+                					
+                					<div class="hover hover1 course-list-img" >
+                						<div class="sub_div_hover" >
+                						<a href="" >
+                							<img class="img_hover" src="Images/message.png" style=""></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
+                						
+                						<a href="" style="float: left;">
+                							<img class="img_3rd_part" src="Images/images/FD1.jpg" >	</a>
+                						</div>
+                									
+	</div>
+</li>
+
+<li class="item calc-price-box">
+                		
+                			<a href="">
+                			<div class="course-list-img">
+                		<img alt="Image" src="Images/images/NV5.jpg">
+                		</div>
+                		<h5><span><font><font>Cindy, 19 toronto</font></font></span></h5><div class="intro">
+                			<p><font><font>Cindy, 19 toronto </font></font></p>
+                			
+                			<span class="l">
+                			<font>
+                				<font>  	</font></font>
+                				</span> 
+                				<span class="r"><font><font> </font></font></span></div>
+                				
+                				<div class="tips">
+                					<span class="l">
+                					<font><font> </font></font>
+                					</span> 
+                					 <span class="r"><font><font> </font></font></span>
+                					</div></a>
+                					
+                					<div class="hover hover1 course-list-img" >
+                						<div class="sub_div_hover" >
+                						<a href="" >
+                							<img class="img_hover" src="Images/message.png" style=""></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
+                						
+                						<a href="" style="float: left;">
+                							<img class="img_3rd_part" src="Images/images/FD1.jpg" >	</a>
+                						</div>
+                									
+	</div>
+</li>
+
+<li class="item calc-price-box">
+                		
+                			<a href="">
+                			<div class="course-list-img">
+                		<img alt="Image" src="Images/images/NV 1.jpeg">
+                		</div>
+                		<h5><span><font><font>Cindy, 19 toronto</font></font></span></h5><div class="intro">
+                			<p><font><font>Cindy, 19 toronto </font></font></p>
+                			
+                			<span class="l">
+                			<font>
+                				<font>  	</font></font>
+                				</span> 
+                				<span class="r"><font><font> </font></font></span></div>
+                				
+                				<div class="tips">
+                					<span class="l">
+                					<font><font> </font></font>
+                					</span> 
+                					 <span class="r"><font><font> </font></font></span>
+                					</div></a>
+                					
+                					<div class="hover hover1 course-list-img" >
+                						<div class="sub_div_hover" >
+                						<a href="" >
+                							<img class="img_hover" src="Images/message.png" style=""></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/follow.png" ></a>
+                				
+                						<a href="" ><img class="img_hover" src="Images/like.png" ></a>
+                						
+                						<a href="" style="float: left;">
+                							<img class="img_3rd_part" src="Images/images/FD1.jpg" >	</a>
+                						</div>
+                									
+	</div>
+</li>
 
 
+
+	
+                   				
+                					 </ul>
+
+
+                </div>
+            </div>
+        </div>
+    
+    
+        
+     
+    
+    </div>
+
+</div>
+
+
+<div id="J_GotoTop" class="gotoTopBtn">
+    <a class="goto_top_diaocha" href="" style="display:none" target="_blank" id="feedBack"></a>
+    <a class="goto_top_app" href="" id="feedBack">
+        <div id="erweima">
+        </div>
+    </a>
+    <a class="goto_top_backMeg" href="" target="_blank" id="feedBack"></a>
+    <a class="goto_top" href="javascript:;" style="display:none" id="backTop"></a>
+</div>
+
+
+
+
+<div style="display: none">
+
+</div>
+<div id="footer" >
+    <div class="waper">
+        <div class="footerwaper">
+            <div class="footer_intro">
+                <div class="footer_logo"></div>
+                <p>&copy; Copyright  by Yao Lu
+                </p>
+            </div>
+            <div class="footer_link">
+                <ul>
+                    <li><a href="" target="_blank">abc</a></li>
+                    <li><a href="" target="_blank">abc</a></li>
+                    <li><a href="" target="_blank">abc</a></li>
+                    <li><a href="" target="_blank">abc</a></li>
+                    <li><a href="" target="_blank">abc</a></li>
+                    <li> <a href="" target="_blank">abc</a></li>                    
+                    <li> <a href="" target="_blank">abc</a></li>                    
+                    <li> <a href="/about/friendly" target="_blank">abc</a></li>
+                </ul>
+            </div>
+            <div class="attention">
+                abc
+                <br/>
+                <a id="qzone" href="" target="_blank" title="abc">abc</a> 
+                <a id="sinaweibo" href=""  target="_blank" title="abc">abc</a>
+                <a id="qqweibo" href=""  target="_blank" title="abc">abc</a>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
-<!--- End of body--->
 </html>
+
