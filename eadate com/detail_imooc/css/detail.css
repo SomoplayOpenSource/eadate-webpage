@@ -1,0 +1,259 @@
+.course-study{
+	overflow: hidden;
+}
+.course_nav{
+	margin-bottom: 20px;
+	height:200px;
+	background: #fff;
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+
+
+/*边栏信息*/
+
+.sidebar{
+	float: left;
+    width: 260px;
+  
+}
+.sidebar dl {
+    clear: both;
+	padding: 0 20px 1px;
+	background: #fff;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	overflow:hidden;
+	padding-bottom:10px;
+	
+}
+.sidebar  dl dt {
+	margin-top:5px;
+	position: relative;
+	font-size: 16px;
+	color:rgb(235, 98, 27);
+	border-bottom: 1px dotted #e3e6e8;
+	margin-bottom:5px;
+	
+}
+.sidebar dl dd {
+	float:left;
+    color: #656e73;
+	font-size: 12px;
+	word-break: break-all;
+	white-space: normal;
+	/**
+	margin: 20px 0;
+	**/
+
+}
+
+.sidebar .user_pic img{
+	border-radius: 40px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-ms-border-radius: 40px;
+	-o-border-radius: 40px;
+	margin-top:20px;
+	width:220px;
+	margin-bottom:-80px;
+}
+
+.sidebar .username {
+  position: relative;
+  font-size: 22px;
+  color:rgb(235, 98, 27);
+  word-break: break-all;
+  word-wrap: break-word;
+  margin-bottom:20px;
+  text-align:center;
+}
+
+.sidebar table{
+	width:220px;
+	font: 14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;
+  	color: #14191e;
+}
+
+.sidebar table td:nth-child(2){
+ 	text-align:right;	
+}
+
+
+#communication{
+	padding:0;
+	padding-top:20px;
+	padding-bottom:20px;	
+}
+
+#communication .tab{
+	
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:30%;
+	background: url("../Images/temp.png") no-repeat 25px center;
+	font-size:18px;
+	background-size: 28px;
+	
+}
+
+
+#communication .tab:hover{
+	border-left:3px solid;
+	color:rgb(235, 98, 27);
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+#communication .tab:hover h3{
+	color:rgb(235, 98, 27);
+	
+}
+
+
+
+.course_content{
+	width:920px;
+	float: right;
+}
+.content_area {
+	width: 880px;
+	float: left;
+	padding: 0 20px 20px;
+	
+	/*min-height: 800px;*/
+	
+	background: #fff;
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	
+	margin-bottom: 20px;
+}
+
+.content_area h3{
+	border-bottom: 1px dotted #999;
+	padding-top:15px;
+	margin-bottom:15px;
+	}
+
+ .content_area h3 .topic{	
+ 	color:rgb(235, 98, 27);
+ 	font-size: 1.8em;
+	background: url(../images/arrow2.png) no-repeat left center;
+	background-size: 28px 20px;
+	padding-left: 30px;
+	cursor: pointer;
+	font-family:Helvetica, sans-serif;
+	font-weight:200;
+	width: 600px;
+	display:inline-block;
+ }
+ 
+
+/* Reviews section in scene_detail and activity_detail*/
+#review .review_item{
+	margin-top: 10px;
+	border-bottom: 1px dotted #999;
+	display:inline-block;
+	
+}
+#review .review_item .review_item_user{
+	width: 10%;
+	overflow:hidden;
+	
+	float:left;
+	
+	
+	
+}
+
+
+
+#review .review_item .review_user_pic{
+	width: 100%;
+	margin-bottom:-40px;
+
+}
+.review_item .name{
+	color:rgb(235, 98, 27);
+	top:10px;
+	text-align:center;
+	margin-left:25px;
+	
+}
+
+#review .review_item .review_rating_detail{
+	width:85%;
+	padding-left:2%;
+	display:inline-block;
+}
+
+
+.rating {
+          overflow: hidden;
+          display: inline-block;
+      }
+.rating_fixed {        
+          background-image: url("../images/full_star.png"),
+           					url("../images/full_star.png"), 
+           					url("../images/full_star.png"),
+           					url("../images/empty_star.png"),
+          					url("../images/empty_star.png");
+          background-repeat:no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
+          background-position:50px center,65px center,80px  center,95px center,110px center;
+          background-size:15px;
+      }
+
+
+#description .special{
+	font-size:16px;
+	
+	display:block;
+	margin-bottom:10px;
+	
+}
+
+
+
+
+.course-menu {
+    border-bottom: 1px solid #D1D6DA;
+    height: 50px;
+    line-height: 50px;
+	margin-bottom:20px
+}
+.course-menu li {
+    float: left;
+    height: 100%;
+    text-align: center;
+    width:120px;
+}
+.course-menu a {
+    display: block;
+    font-size: 14px;
+    height: 100%;
+	color:#303538;
+}
+.course-menu a span {
+    display: block;
+    height: 14px;
+    line-height: 14px;
+    position: relative;
+    top: 19px;
+}
+
+.course-menu a:hover {
+    color: #C9394A;
+    height: 50px;
+    text-decoration: none;
+}
+.course-menu a.active{
+    border-bottom: 4px solid #C9394A;
+    color: #C9394A;
+    height: 50px;
+    text-decoration: none;
+}

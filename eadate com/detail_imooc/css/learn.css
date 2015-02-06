@@ -1,0 +1,151 @@
+.course_chapter_list{
+	padding:0 20px;
+}
+/*学习*/
+i.hasOpen {
+	background: url(../img/learnicon.png) no-repeat 0 -37px;
+	width: 20px;
+	height: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+i.unOpen {
+	background: url(../img/learnicon.png) no-repeat 0 -82px;
+	width: 20px;
+	height: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+i.hasOpenOn {
+	background: url(../img/learnicon.png) no-repeat 0 8px;
+	width: 20px;
+	height: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.learnchapter .video li span.fr {
+	float: right;
+}
+.learnchapter .video li.read span, .chapter em {
+	float: right;
+	color: #b3b3b3;
+}
+.learnchapter h3 span {
+	display: block;
+	float: right;
+	width: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	color: #b4bbbf;
+	text-align:center
+}
+.learnchapter ul {
+	display: none;
+}
+.learnchapter-active ul {
+	display: block;
+	margin-bottom: 10px;
+}
+.learnchapter h3:hover {
+	background: #d3dce0;
+}
+/*学习列表显示*/
+.learnchapter h3, .unlearnchapter h3 {
+	background: #f2f7fa;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 13px 0 0;
+	font-family: 微软雅黑;
+	font-size: 16px;
+	cursor: pointer;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.learnchapter h3{
+	color: #303538;
+}
+.unlearnchapter h3 {
+	color:#909b9e;
+}
+
+.learnchapter strong, .unlearnchapter strong {
+	cursor: default;
+	display: block;
+	float: left;
+	padding: 0 0 0 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 345px;
+	text-overflow: ellipsis;
+}
+.learnchapter em,.unlearnchapter em {
+	float: right;
+	font-size: 12px;
+	cursor: default;
+}
+.learnchapter .video li {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 40px;
+	margin-bottom: 2px;
+}
+.learnchapter .video li:hover {
+	background: #f8f8f8;
+}
+.learnchapter .video li:last-child {
+	border: none;
+}
+.learnchapter .video li {
+*position:relative !important;
+	position: relative;
+}
+.learnchapter .video li i {
+	background: url(../img/learnicon.png) no-repeat 0 -316px;
+	float: right;
+	height: 40px;
+	width: 24px;
+	display: inline-block;
+ *position:absolute !important;
+ *right:8px !important;
+ *bottom:0 !important;
+ *float:none !important;
+}
+.learnchapter .video li i.doStudy {
+	background: url(../img/learnicon.png) no-repeat 0 -274px;
+}
+.learnchapter .video li i.hasStudy {
+	background: url(../img/learnicon.png) no-repeat 0 -234px;
+}
+.learnchapter .video li a {
+	color: #60686b;
+	display: block;
+	height: 40px;
+	overflow: hidden;
+	padding: 0 0 0 28px;
+	word-break: break-all;
+}
+.learnchapter .video li a:hover {
+	text-decoration: underline;
+	color: #4d5559;
+}
+.learnchapter .video li a.studyvideo {
+	background: url(../img/learnicon.png) no-repeat 10px -121px;
+}
+.learnchapter .video li a.practise {
+	background: url(../img/learnicon.png) no-repeat 10px -157px;
+}
+.learnchapter .video li a.programme {
+	background: url(../img/learnicon.png) no-repeat 10px -194px;
+}
+.laststudy {
+	color: #84c00b;
+	font-size: 12px;
+	position: absolute;
+	right: 35px;
+	top: 0;
+}
+.uncourse{color:#d0d6d9;font-size:14px;text-align:center;padding:80px 0 30px 0;}
+.uncourse span{background:url(../img/unlist.gif) no-repeat; width:120px; height:120px;display:block; margin:0 auto 30px;}
