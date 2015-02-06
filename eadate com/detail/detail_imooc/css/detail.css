@@ -76,6 +76,8 @@
 
 .sidebar table{
 	width:220px;
+	font: 14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;
+  	color: #14191e;
 }
 
 .sidebar table td:nth-child(2){
@@ -90,7 +92,7 @@
 }
 
 #communication .tab{
-	color:#656e73;
+	
 	padding-top:5px;
 	padding-bottom:5px;
 	padding-left:30%;
@@ -209,30 +211,11 @@
 
 #description .special{
 	font-size:16px;
-	color: #ccc;
+	
 	display:block;
-	margin-bottom:15px;
+	margin-bottom:10px;
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

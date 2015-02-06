@@ -133,11 +133,11 @@
 
 #contact table td{
 	text-align:left;
-	
 }
-#open_hour table td{
-	font-size:11px;
+#contact table td:nth-child(1){
+ 	width:65px;
 }
+
 
 #open_hour table .wednesday_hour{
 	color:rgb(235, 98, 27);

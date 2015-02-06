@@ -56,25 +56,29 @@
 
 #place_name span{
 	font-size:30px;
-	
 	margin-top:15px;
     color:#656e73;
 }
 
 #place_review{
-	width:40%;
-	color:gray;
-	
-	
+	width:50%;
 }
 
 #place_review .place_review_star{
-	display:inline-block;
+	
 	width:15px;
 }
 
 .place_info table{
-	font-size:0.7em;
+  font: 14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;
+  color: #14191e;
+}
+
+.place_info table td:nth-child(1){
+ 	width:70px;
+}
+.place_info table td:nth-child(2){
+ 	width:150px;
 }
 
 
