@@ -18,13 +18,16 @@ EaDate
 
 		<script type="text/javascript" language="JavaScript">
 		
-		jQuery.noConflict();
+jQuery.noConflict();
 jQuery( document ).ready(function( $ ) {
   // Code that uses jQuery's $ can follow here.
   
 $('.course-category').hover(
 function () {
-    $(this).addClass('hover');
+   // $(this).addClass('hover');
+   // alert($(this).css('height'));
+    //$(".dot-sidebar-curr").css('Top','60px');
+    
 }, function () {
     $(this).removeClass('hover');
 });
